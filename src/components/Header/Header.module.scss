@@ -1,0 +1,27 @@
+@import "../../styles/main.scss";
+
+.header {
+  background-color: $white;
+}
+
+.container {
+  margin: 0 auto;
+  padding: map-get($spacers, large) 0 map-get($spacers, normal);
+  max-width: px-to-rem(1120px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  line-height: 0;
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.navigation {
+  display: flex;
+}

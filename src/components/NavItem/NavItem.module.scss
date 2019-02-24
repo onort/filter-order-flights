@@ -1,0 +1,23 @@
+@import "../../styles/main.scss";
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: map-get($spacers, normal) 0 map-get($spacers, large);
+  margin-left: map-get($spacers, x-large);
+  color: $grey2;
+  cursor: pointer;
+
+  &.active {
+    color: $primary;
+  }
+}
+
+.icon {
+  margin: 0 map-get($spacers, small);
+}
+
+.title {
+  font-family: $font-family-heading;
+  font-weight: 600;
+}

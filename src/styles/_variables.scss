@@ -1,0 +1,63 @@
+@import "functions.scss";
+
+@font-face {
+  font-family: "SF UI Display";
+  font-weight: 600;
+  src: url("/fonts/SF-UI-Display-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  font-weight: 600;
+  src: url("/fonts/SF-UI-Text-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  font-weight: 400;
+  src: url("/fonts/SF-UI-Text-Regular.otf") format("opentype");
+}
+
+$white: #fff;
+$black: #36383c;
+$grey1: #575b62;
+$grey2: #888d99;
+$grey3: #bdc0c8;
+$grey4: #d9dce4;
+$grey5: #f2f4f8;
+
+$red: #f12a15;
+$blue: #40afff;
+
+// #F2F2F2 is not listed on color palette, figma compatibility issue?
+$body-bg: #f2f2f2;
+
+$primary: $red;
+$secondary: $blue;
+
+$font-family-primary: "SF UI Text", sans-serif;
+$font-family-heading: "SF UI Display", "sans-serif";
+
+$font-size-root: 16px;
+
+$heading-sizes: (
+  h1: px-to-rem(32px),
+  h2: px-to-rem(24px),
+  h3: px-to-rem(20px),
+  h4: px-to-rem(14px),
+  h5: px-to-rem(11px)
+);
+
+$font-sizes: (
+  normal: $font-size-root,
+  small: px-to-rem(14px)
+);
+
+$spacer: $font-size-root;
+
+$spacers: (
+  x-large: px-to-rem($spacer * 2),
+  large: px-to-rem($spacer * 1.5),
+  normal: px-to-rem($spacer),
+  small: px-to-rem($spacer * 0.75)
+);
