@@ -20,6 +20,6 @@ body {
 }
 
 .searchSection {
-  background-color: $primary;
   padding: map-get($spacers, large) 0;
+  background-color: $primary;
 }

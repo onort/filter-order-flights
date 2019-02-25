@@ -2,9 +2,9 @@
 
 .container {
   display: flex;
-  border-right: 1px solid $muted-border;
-  flex: 2;
   max-width: px-to-rem(200px);
+  flex: 2;
+  border-right: 1px solid $muted-border;
 
   &.small {
     flex: 1;
@@ -17,12 +17,12 @@
 }
 
 .input {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   padding: map-get($spacers, normal) 0;
+  border: none;
+  color: $grey1;
   font-family: $font-family-primary;
   font-weight: 400;
-  color: $grey1;
-  border: none;
-  min-width: 0;
-  width: 100%;
-  max-width: 100%;
 }

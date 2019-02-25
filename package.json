@@ -5,17 +5,34 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "tslint -c tslint.json -p tsconfig.json 'src/**/*.ts?(x)",
+      "git add"
+    ],
+    "src/**/*.{css,scss}": [
+      "stylelint 'src/**/*.scss' --config=.stylelintrc --fix",
+      "git add"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:scss": "stylelint src/**/*.scss --config=.stylelintrc --fix",
-    "lint:ts": "tslint -c tslint.json -p tsconfig.json 'src/**/*.ts?(x)'"
+    "lint:scss": "stylelint 'src/**/*.scss' --config=.stylelintrc --fix",
+    "lint:ts": "tslint -c tslint.json -p tsconfig.json 'src/**/*.ts?(x)'",
+    "lint": "npm-run-all --parallel lint:scss lint:ts"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,9 +53,12 @@
     "@types/react-dom": "16.8.2",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.4",
     "node-sass": "^4.11.0",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^2.0.0",
     "tslint": "^5.12.1",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.18.0",

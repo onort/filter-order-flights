@@ -1,12 +1,12 @@
 @import "../../styles/main.scss";
 
 .button {
-  cursor: pointer;
-  border: none;
-  border-radius: px-to-rem(2px);
-  background-color: $grey4;
-  color: $white;
   padding: map-get($spacers, small) map-get($spacers, x-large);
+  border: none;
+  background-color: $grey4;
+  border-radius: px-to-rem(2px);
+  color: $white;
+  cursor: pointer;
 
   &.primary {
     background-color: $primary;

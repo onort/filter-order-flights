@@ -5,17 +5,17 @@
 }
 
 .container {
-  margin: 0 auto;
-  padding: map-get($spacers, large) 0 map-get($spacers, normal);
-  max-width: px-to-rem(1120px);
   display: flex;
-  justify-content: space-between;
+  max-width: px-to-rem(1120px);
   align-items: center;
+  justify-content: space-between;
+  padding: map-get($spacers, large) 0 map-get($spacers, normal);
+  margin: 0 auto;
 }
 
 .logoContainer {
-  line-height: 0;
   cursor: pointer;
+  line-height: 0;
 }
 
 .logo {
