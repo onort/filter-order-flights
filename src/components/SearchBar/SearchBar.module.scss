@@ -1,0 +1,15 @@
+@import "../../styles/main.scss";
+
+.container {
+  // TODO: Better size initiation, breakpoints etc.
+  width: 1120px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: $white;
+  display: flex;
+}
+
+.searchButton {
+  margin: map-get($spacers, small);
+  min-width: px-to-rem(180px);
+}

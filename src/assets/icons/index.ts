@@ -5,6 +5,7 @@ import Bus from "./bus.svg"
 import CheckList from "./checklist.svg"
 import Contact from "./contact.svg"
 import Departure from "./departure.svg"
+import DepartureDate from "./deparutre-date.svg"
 import Facebook from "./facebook-icon.svg"
 import Forward from "./forward.svg"
 import GooglePlus from "./google-plus.svg"
@@ -32,6 +33,7 @@ export {
   CheckList,
   Contact,
   Departure,
+  DepartureDate,
   Facebook,
   Forward,
   GooglePlus,

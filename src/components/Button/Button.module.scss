@@ -1,0 +1,25 @@
+@import "../../styles/main.scss";
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: px-to-rem(2px);
+  background-color: $grey4;
+  color: $white;
+  padding: map-get($spacers, small) map-get($spacers, x-large);
+
+  &.primary {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &.secondary {
+    background-color: $secondary;
+    color: $white;
+  }
+
+  .text {
+    font-family: $font-family-primary;
+    font-weight: 400;
+  }
+}

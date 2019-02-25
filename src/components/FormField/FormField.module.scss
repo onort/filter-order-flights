@@ -1,0 +1,28 @@
+@import "../../styles/main.scss";
+
+.container {
+  display: flex;
+  border-right: 1px solid $muted-border;
+  flex: 2;
+  max-width: px-to-rem(200px);
+
+  &.small {
+    flex: 1;
+  }
+}
+
+.icon {
+  display: inline-block;
+  padding: map-get($spacers, normal);
+}
+
+.input {
+  padding: map-get($spacers, normal) 0;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  color: $grey1;
+  border: none;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+}
