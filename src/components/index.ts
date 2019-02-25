@@ -10,6 +10,7 @@ import Header from "./Header"
 import NavItem from "./NavItem"
 import OrderResults from "./OrderResults"
 import SearchBar from "./SearchBar"
+import Slider from "./Slider"
 
 export {
   Button,
@@ -23,5 +24,6 @@ export {
   Header,
   NavItem,
   OrderResults,
-  SearchBar
+  SearchBar,
+  Slider
 }

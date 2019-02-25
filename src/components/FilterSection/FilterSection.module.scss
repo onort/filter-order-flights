@@ -1,7 +1,7 @@
 @import "../../styles/main.scss";
 
 .container {
-  padding: map-get($spacers, normal);
+  padding: map-get($spacers, large);
   padding-bottom: map-get($spacers, large);
   border-bottom: 1px solid $muted-border;
 }
@@ -9,7 +9,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: map-get($spacers, normal);
+  margin-bottom: map-get($spacers, large);
 }
 
 .title {

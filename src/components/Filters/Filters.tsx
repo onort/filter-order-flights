@@ -2,7 +2,7 @@
 import React, { Component } from "react"
 
 import styles from "./Filters.module.scss"
-import { Card, CheckBox, FilterSection } from "../"
+import { Card, CheckBox, FilterSection, Slider } from "../"
 
 class Filters extends Component {
   public handleChange = () => console.log("Checkbox clicked")
@@ -28,10 +28,20 @@ class Filters extends Component {
           <CheckBox label="Kurumsal" onChange={this.handleChange} />
         </FilterSection>
         <FilterSection title="Max Fiyat">
-          <span>Filter Section</span>
+          <Slider
+            min={0}
+            max={100}
+            onChange={this.handleChange}
+            currentValue={50}
+          />
         </FilterSection>
         <FilterSection title="Max Uçuş Süresi">
-          <span>Filter Section</span>
+          <Slider
+            min={0}
+            max={100}
+            onChange={this.handleChange}
+            currentValue={50}
+          />
         </FilterSection>
         <FilterSection title="Havayolu" canSelectAll={true}>
           <CheckBox
