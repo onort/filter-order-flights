@@ -62,5 +62,6 @@ $spacers: (
   x-large: px-to-rem($spacer * 2),
   large: px-to-rem($spacer * 1.5),
   normal: px-to-rem($spacer),
-  small: px-to-rem($spacer * 0.75)
+  small: px-to-rem($spacer * 0.75),
+  x-small: px-to-rem($spacer * 0.5)
 );

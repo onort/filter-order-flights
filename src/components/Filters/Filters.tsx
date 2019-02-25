@@ -1,17 +1,31 @@
+/* tslint:disable no-console */
 import React, { Component } from "react"
 
 import styles from "./Filters.module.scss"
-import { Card, FilterSection } from "../"
+import { Card, CheckBox, FilterSection } from "../"
 
 class Filters extends Component {
+  public handleChange = () => console.log("Checkbox clicked")
   public render() {
     return (
       <Card className={styles.container}>
         <FilterSection title="Aktarma" canSelectAll={true}>
-          <span>Filter Section</span>
+          <CheckBox
+            label="Sadece Aktarmasız"
+            onChange={this.handleChange}
+            checked={true}
+          />
+          <CheckBox label="1 Aktarma" onChange={this.handleChange} />
+          <CheckBox label="2+ Aktarmasız" onChange={this.handleChange} />
         </FilterSection>
         <FilterSection title="Sınıf" canSelectAll={true}>
-          <span>Filter Section</span>
+          <CheckBox
+            label="Ekonomi"
+            onChange={this.handleChange}
+            checked={true}
+          />
+          <CheckBox label="Business" onChange={this.handleChange} />
+          <CheckBox label="Kurumsal" onChange={this.handleChange} />
         </FilterSection>
         <FilterSection title="Max Fiyat">
           <span>Filter Section</span>
@@ -20,7 +34,13 @@ class Filters extends Component {
           <span>Filter Section</span>
         </FilterSection>
         <FilterSection title="Havayolu" canSelectAll={true}>
-          <span>Filter Section</span>
+          <CheckBox
+            label="Turkish Airlines"
+            onChange={this.handleChange}
+            checked={true}
+          />
+          <CheckBox label="Pegasus" onChange={this.handleChange} />
+          <CheckBox label="Borajet" onChange={this.handleChange} />
         </FilterSection>
       </Card>
     )

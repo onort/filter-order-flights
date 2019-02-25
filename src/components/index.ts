@@ -1,5 +1,6 @@
 import Button from "./Button"
 import Card from "./Card"
+import CheckBox from "./CheckBox"
 import Container from "./Container"
 import Dropdown from "./Dropdown"
 import Filters from "./Filters"
@@ -13,6 +14,7 @@ import SearchBar from "./SearchBar"
 export {
   Button,
   Card,
+  CheckBox,
   Container,
   Dropdown,
   Filters,
