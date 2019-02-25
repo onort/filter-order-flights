@@ -17,9 +17,15 @@ html {
 
 body {
   min-height: 100vh;
+  background-color: $body-bg;
 }
 
 .searchSection {
   padding: map-get($spacers, large) 0;
   background-color: $primary;
+}
+
+.main {
+  max-width: 1120px;
+  margin: 0 auto;
 }

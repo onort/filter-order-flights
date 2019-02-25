@@ -1,0 +1,16 @@
+@import "../../styles/main.scss";
+
+.container {
+  display: flex;
+  max-width: 1120px;
+  justify-content: space-between;
+  margin: map-get($spacers, x-large) auto map-get($spacers, large);
+}
+
+.flightCount {
+  display: block;
+  color: $black;
+  font-family: $font-family-heading;
+  font-size: map-get($heading-sizes, h2);
+  font-weight: 600;
+}

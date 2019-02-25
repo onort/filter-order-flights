@@ -1,0 +1,35 @@
+@import "../../styles/main.scss";
+
+.container {
+  display: flex;
+}
+
+.title {
+  display: block;
+  margin-right: map-get($spacers, normal);
+  color: $grey1;
+  font-family: $font-family-heading;
+  font-size: map-get($heading-sizes, h4);
+  font-weight: 600;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+  width: px-to-rem(230px);
+  padding: map-get($spacers, small) map-get($spacers, normal);
+  margin-left: 1rem;
+  background-color: $white;
+  color: $grey3;
+  font-family: $font-family-heading;
+  font-size: map-get($heading-sizes, h4);
+  font-weight: 600;
+}
+
+.dropdownList {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: block;
+  width: px-to-rem(230px);
+}

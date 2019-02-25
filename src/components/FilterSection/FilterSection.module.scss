@@ -1,0 +1,31 @@
+@import "../../styles/main.scss";
+
+.container {
+  padding: map-get($spacers, normal);
+  padding-bottom: map-get($spacers, large);
+  border-bottom: 1px solid $muted-border;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: map-get($spacers, normal);
+}
+
+.title {
+  display: block;
+  color: $grey1;
+  font-family: $font-family-primary;
+  font-size: map-get($heading-sizes, h5);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.selectAll {
+  display: block;
+  color: #bdc0c8;
+  cursor: pointer;
+  font-family: $font-family-primary;
+  font-size: map-get($heading-sizes, h5);
+  text-decoration: underline;
+}
