@@ -1,3 +1,4 @@
+import PegasusLogo from "./pegasus-logo.png"
 import ThyLogo from "./thy.png"
 
-export { ThyLogo }
+export { PegasusLogo, ThyLogo }

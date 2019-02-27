@@ -11,6 +11,8 @@ import FooterMenuGroup from "./FooterMenuGroup"
 import Header from "./Header"
 import NavItem from "./NavItem"
 import OrderResults from "./OrderResults"
+import Results from "./Results"
+import ResultsTable from "./ResultsTable"
 import SearchBar from "./SearchBar"
 import SearchForm from "./SearchForm"
 import Slider from "./Slider"
@@ -29,6 +31,8 @@ export {
   Header,
   NavItem,
   OrderResults,
+  Results,
+  ResultsTable,
   SearchBar,
   SearchForm,
   Slider

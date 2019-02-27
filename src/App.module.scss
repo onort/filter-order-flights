@@ -26,6 +26,9 @@ body {
 }
 
 .main {
+  display: grid;
   max-width: 1120px;
-  margin: 0 auto;
+  margin: 0 auto map-get($spacers, x-large);
+  grid-column-gap: map-get($spacers, large);
+  grid-template-columns: px-to-rem(260px) 1fr;
 }

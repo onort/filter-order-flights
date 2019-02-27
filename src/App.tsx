@@ -6,7 +6,7 @@ import {
   Footer,
   Header,
   OrderResults,
-  SearchForm,
+  Results,
   SearchBar
 } from "./components"
 
@@ -17,9 +17,10 @@ class App extends Component {
         <Header />
         <SearchBar type="primary" />
         <OrderResults flightCount={25} />
-        <main className={styles.main}>
+        <div className={styles.main}>
           <Filters />
-        </main>
+          <Results />
+        </div>
         <SearchBar type="secondary" />
         <Footer />
       </div>

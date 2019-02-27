@@ -1,0 +1,72 @@
+/* stylelint-disable declaration-colon-newline-after */
+@import "../../styles/main.scss";
+
+$priceCellPaddingHorizontal: map-get($spacers, small);
+$priceCellPaddingVertical: map-get($spacers, normal);
+
+.container {
+  display: grid;
+}
+
+.row {
+  display: grid;
+  padding: map-get($spacers, small);
+  border-bottom: 1px solid $muted-border;
+  grid-template-columns: repeat(4, 1fr) 2fr;
+
+  &.header {
+    display: grid;
+    padding: 0 map-get($spacers, small);
+    border-bottom: 1px solid $muted-border;
+    color: $grey2;
+    font-family: $font-family-primary;
+    font-size: map-get($heading-sizes, h5);
+    font-weight: 600;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.cell {
+  padding: map-get($spacers, large) map-get($spacers, normal);
+
+  &.priceCell {
+    padding:
+      calc(#{map-get($spacers, large)} - #{$priceCellPaddingHorizontal})
+      calc(#{map-get($spacers, normal)} - #{$priceCellPaddingHorizontal});
+  }
+}
+
+.dataCell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  span {
+    display: block;
+  }
+}
+
+.val {
+  color: $black;
+  font-family: $font-family-primary;
+  font-size: map-get($font-sizes, large);
+  font-weight: 600;
+}
+
+.sub {
+  color: $grey2;
+  font-family: $font-family-primary;
+  font-size: map-get($heading-sizes, h5);
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding: $priceCellPaddingVertical $priceCellPaddingHorizontal;
+  background-color: $grey5;
+  border-radius: px-to-rem(2px);
+}
+
+.viewButton {
+  background-color: $dark-blue;
+}
