@@ -1,0 +1,428 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FooterMenuGroup /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FooterMenuGroup
+    links={
+      Array [
+        Object {
+          "text": "İletişim",
+          "uri": "#",
+        },
+        Object {
+          "text": "Twitter",
+          "uri": "#",
+        },
+        Object {
+          "text": "Facebook",
+          "uri": "#",
+        },
+      ]
+    }
+    title="Bize Ulaşın"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h5
+          className="title"
+        >
+          Bize Ulaşın
+        </h5>,
+        <ul
+          className="list"
+        >
+          <li
+            className="item"
+          >
+            <a
+              href="#"
+            >
+              İletişim
+            </a>
+          </li>
+          <li
+            className="item"
+          >
+            <a
+              href="#"
+            >
+              Twitter
+            </a>
+          </li>
+          <li
+            className="item"
+          >
+            <a
+              href="#"
+            >
+              Facebook
+            </a>
+          </li>
+        </ul>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Bize Ulaşın",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "Bize Ulaşın",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li
+              className="item"
+            >
+              <a
+                href="#"
+              >
+                İletişim
+              </a>
+            </li>,
+            <li
+              className="item"
+            >
+              <a
+                href="#"
+              >
+                Twitter
+              </a>
+            </li>,
+            <li
+              className="item"
+            >
+              <a
+                href="#"
+              >
+                Facebook
+              </a>
+            </li>,
+          ],
+          "className": "list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "İletişim",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                href="#"
+              >
+                İletişim
+              </a>,
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "İletişim",
+                "href": "#",
+              },
+              "ref": null,
+              "rendered": "İletişim",
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Twitter",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                href="#"
+              >
+                Twitter
+              </a>,
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Twitter",
+                "href": "#",
+              },
+              "ref": null,
+              "rendered": "Twitter",
+              "type": "a",
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "Facebook",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                href="#"
+              >
+                Facebook
+              </a>,
+              "className": "item",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Facebook",
+                "href": "#",
+              },
+              "ref": null,
+              "rendered": "Facebook",
+              "type": "a",
+            },
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h5
+            className="title"
+          >
+            Bize Ulaşın
+          </h5>,
+          <ul
+            className="list"
+          >
+            <li
+              className="item"
+            >
+              <a
+                href="#"
+              >
+                İletişim
+              </a>
+            </li>
+            <li
+              className="item"
+            >
+              <a
+                href="#"
+              >
+                Twitter
+              </a>
+            </li>
+            <li
+              className="item"
+            >
+              <a
+                href="#"
+              >
+                Facebook
+              </a>
+            </li>
+          </ul>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Bize Ulaşın",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "Bize Ulaşın",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="item"
+              >
+                <a
+                  href="#"
+                >
+                  İletişim
+                </a>
+              </li>,
+              <li
+                className="item"
+              >
+                <a
+                  href="#"
+                >
+                  Twitter
+                </a>
+              </li>,
+              <li
+                className="item"
+              >
+                <a
+                  href="#"
+                >
+                  Facebook
+                </a>
+              </li>,
+            ],
+            "className": "list",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "İletişim",
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="#"
+                >
+                  İletişim
+                </a>,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "İletişim",
+                  "href": "#",
+                },
+                "ref": null,
+                "rendered": "İletişim",
+                "type": "a",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Twitter",
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="#"
+                >
+                  Twitter
+                </a>,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Twitter",
+                  "href": "#",
+                },
+                "ref": null,
+                "rendered": "Twitter",
+                "type": "a",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "Facebook",
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="#"
+                >
+                  Facebook
+                </a>,
+                "className": "item",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Facebook",
+                  "href": "#",
+                },
+                "ref": null,
+                "rendered": "Facebook",
+                "type": "a",
+              },
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<FooterMenuGroup /> should match snapshot 2`] = `"<div class=\\"container\\"><h5 class=\\"title\\">Bize Ulaşın</h5><ul class=\\"list\\"><li class=\\"item\\"><a href=\\"#\\">İletişim</a></li><li class=\\"item\\"><a href=\\"#\\">Twitter</a></li><li class=\\"item\\"><a href=\\"#\\">Facebook</a></li></ul></div>"`;

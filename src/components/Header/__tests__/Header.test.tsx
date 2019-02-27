@@ -1,6 +1,6 @@
 /* tslint:disable jsx-key */
 import React from "react"
-import { shallow, mount } from "enzyme"
+import { mount, shallow } from "enzyme"
 
 import { Contact, Help, Home, Sale } from "../../../assets/icons"
 import { ThyLogo } from "../../../assets/images"

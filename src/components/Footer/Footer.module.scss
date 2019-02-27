@@ -1,0 +1,25 @@
+@import "../../styles/main.scss";
+
+.footerContainer {
+  display: grid;
+  width: 1120px;
+  padding: map-get($spacers, x-large) 0;
+  margin: map-get($spacers, x-large) auto;
+  grid-column-gap: px-to-rem(50px);
+  grid-template-columns: 3fr 7fr;
+}
+
+.textContent {
+  color: $grey2;
+  font-family: $font-family-primary;
+  font-size: map-get($font-sizes, small);
+  font-weight: 400;
+  line-height: px-to-rem(24px);
+  text-decoration: none;
+}
+
+.menu {
+  display: grid;
+  flex: 5;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}

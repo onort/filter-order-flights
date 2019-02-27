@@ -1,38 +1,29 @@
-import React, { Component } from "react"
+import React from "react"
 import cx from "classnames"
 
 import styles from "./SearchBar.module.scss"
-import {
-  Arrival,
-  ArrivalDate,
-  Departure,
-  DepartureDate,
-  Person
-} from "../../assets/icons"
-import { Button, FormField } from "../"
+import { Container, SearchForm } from "../"
 
 interface Props {
-  className?: string
+  type: "primary" | "secondary"
 }
 
-class SearchBar extends Component<Props> {
-  public render() {
-    const classNames = cx(styles.container, this.props.className)
-    return (
-      <div className={classNames}>
-        <FormField icon={Departure} size="normal" />
-        <FormField icon={Arrival} size="normal" />
-        <FormField icon={DepartureDate} size="normal" />
-        <FormField icon={ArrivalDate} size="normal" />
-        <FormField icon={Person} size="small" />
-        <Button
-          text="Yeniden Ara"
-          primary={true}
-          className={styles.searchButton}
-        />
-      </div>
-    )
-  }
+const SearchBar: React.SFC<Props> = props => {
+  const classNames = cx(styles.container, styles[props.type])
+  return (
+    <section className={classNames}>
+      <Container className={styles.searchBar}>
+        {props.type === "secondary" && (
+          <h2 className={styles.title}>En uygun bileti hemen bul</h2>
+        )}
+        <SearchForm type={props.type} />
+      </Container>
+    </section>
+  )
+}
+
+SearchBar.defaultProps = {
+  type: "primary"
 }
 
 export default SearchBar

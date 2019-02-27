@@ -1,15 +1,33 @@
+/* stylelint-disable declaration-colon-newline-after */
+
 @import "../../styles/main.scss";
 
 .container {
-  // TODO: Better size initiation, breakpoints etc.
-  display: flex;
+  padding: map-get($spacers, large) 0;
+
+  &.primary {
+    background-color: $primary;
+  }
+
+  &.secondary {
+    padding-bottom:
+      calc(
+        #{map-get($spacers, large) + #{map-get($spacers, x-large)}}
+      );
+    background-color: $grey1;
+  }
+}
+
+.searchBar {
   width: 1120px;
   max-width: 100%;
   margin: 0 auto;
-  background-color: $white;
 }
 
-.searchButton {
-  min-width: px-to-rem(180px);
-  margin: map-get($spacers, small);
+.title {
+  margin-bottom: map-get($spacers, normal);
+  color: $white;
+  font-family: $font-family-heading;
+  font-size: map-get($heading-sizes, h2);
+  font-weight: 600;
 }

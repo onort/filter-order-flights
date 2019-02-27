@@ -1,0 +1,1176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Footer />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Container
+        className="footerContainer"
+      >
+        <div
+          className="branding"
+        >
+          <img
+            alt="Logo"
+            className="logo"
+            src="thy.png"
+          />
+          <p
+            className="textContent"
+          >
+            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.
+          </p>
+        </div>
+        <div
+          className="menu"
+        >
+          <FooterMenuGroup
+            links={
+              Array [
+                Object {
+                  "text": "Anasayfa",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Şehir & Gezi Rehberi",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Fırsatlar",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Keşfet",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Yardım",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "İletişim",
+                  "uri": "#",
+                },
+              ]
+            }
+            title="Sayfalar"
+          />
+          <FooterMenuGroup
+            links={
+              Array [
+                Object {
+                  "text": "İstanbul",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Ankara",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "İzmir",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "New York",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Roma",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Venedik",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Amsterdam",
+                  "uri": "#",
+                },
+              ]
+            }
+            title="Popüler Şehirler"
+          />
+          <FooterMenuGroup
+            links={
+              Array [
+                Object {
+                  "text": "Online Check-in",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Genel Uçuş Kuralları",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Yolcu Hakları",
+                  "uri": "#",
+                },
+              ]
+            }
+            title="Merak Edilenler"
+          />
+          <FooterMenuGroup
+            links={
+              Array [
+                Object {
+                  "text": "İletişim",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Twitter",
+                  "uri": "#",
+                },
+                Object {
+                  "text": "Facebook",
+                  "uri": "#",
+                },
+              ]
+            }
+            title="Bize Ulaşın"
+          />
+        </div>
+      </Container>,
+      "className": "footer",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="branding"
+          >
+            <img
+              alt="Logo"
+              className="logo"
+              src="thy.png"
+            />
+            <p
+              className="textContent"
+            >
+              Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.
+            </p>
+          </div>,
+          <div
+            className="menu"
+          >
+            <FooterMenuGroup
+              links={
+                Array [
+                  Object {
+                    "text": "Anasayfa",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Şehir & Gezi Rehberi",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Fırsatlar",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Keşfet",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Yardım",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "İletişim",
+                    "uri": "#",
+                  },
+                ]
+              }
+              title="Sayfalar"
+            />
+            <FooterMenuGroup
+              links={
+                Array [
+                  Object {
+                    "text": "İstanbul",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Ankara",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "İzmir",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "New York",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Roma",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Venedik",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Amsterdam",
+                    "uri": "#",
+                  },
+                ]
+              }
+              title="Popüler Şehirler"
+            />
+            <FooterMenuGroup
+              links={
+                Array [
+                  Object {
+                    "text": "Online Check-in",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Genel Uçuş Kuralları",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Yolcu Hakları",
+                    "uri": "#",
+                  },
+                ]
+              }
+              title="Merak Edilenler"
+            />
+            <FooterMenuGroup
+              links={
+                Array [
+                  Object {
+                    "text": "İletişim",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Twitter",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Facebook",
+                    "uri": "#",
+                  },
+                ]
+              }
+              title="Bize Ulaşın"
+            />
+          </div>,
+        ],
+        "className": "footerContainer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="Logo"
+                className="logo"
+                src="thy.png"
+              />,
+              <p
+                className="textContent"
+              >
+                Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.
+              </p>,
+            ],
+            "className": "branding",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Logo",
+                "className": "logo",
+                "src": "thy.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.",
+                "className": "textContent",
+              },
+              "ref": null,
+              "rendered": "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <FooterMenuGroup
+                links={
+                  Array [
+                    Object {
+                      "text": "Anasayfa",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Şehir & Gezi Rehberi",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Fırsatlar",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Keşfet",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Yardım",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "İletişim",
+                      "uri": "#",
+                    },
+                  ]
+                }
+                title="Sayfalar"
+              />,
+              <FooterMenuGroup
+                links={
+                  Array [
+                    Object {
+                      "text": "İstanbul",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Ankara",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "İzmir",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "New York",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Roma",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Venedik",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Amsterdam",
+                      "uri": "#",
+                    },
+                  ]
+                }
+                title="Popüler Şehirler"
+              />,
+              <FooterMenuGroup
+                links={
+                  Array [
+                    Object {
+                      "text": "Online Check-in",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Genel Uçuş Kuralları",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Yolcu Hakları",
+                      "uri": "#",
+                    },
+                  ]
+                }
+                title="Merak Edilenler"
+              />,
+              <FooterMenuGroup
+                links={
+                  Array [
+                    Object {
+                      "text": "İletişim",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Twitter",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Facebook",
+                      "uri": "#",
+                    },
+                  ]
+                }
+                title="Bize Ulaşın"
+              />,
+            ],
+            "className": "menu",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "links": Array [
+                  Object {
+                    "text": "Anasayfa",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Şehir & Gezi Rehberi",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Fırsatlar",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Keşfet",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Yardım",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "İletişim",
+                    "uri": "#",
+                  },
+                ],
+                "title": "Sayfalar",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "links": Array [
+                  Object {
+                    "text": "İstanbul",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Ankara",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "İzmir",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "New York",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Roma",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Venedik",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Amsterdam",
+                    "uri": "#",
+                  },
+                ],
+                "title": "Popüler Şehirler",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "links": Array [
+                  Object {
+                    "text": "Online Check-in",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Genel Uçuş Kuralları",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Yolcu Hakları",
+                    "uri": "#",
+                  },
+                ],
+                "title": "Merak Edilenler",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "links": Array [
+                  Object {
+                    "text": "İletişim",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Twitter",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Facebook",
+                    "uri": "#",
+                  },
+                ],
+                "title": "Bize Ulaşın",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "footer",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Container
+          className="footerContainer"
+        >
+          <div
+            className="branding"
+          >
+            <img
+              alt="Logo"
+              className="logo"
+              src="thy.png"
+            />
+            <p
+              className="textContent"
+            >
+              Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.
+            </p>
+          </div>
+          <div
+            className="menu"
+          >
+            <FooterMenuGroup
+              links={
+                Array [
+                  Object {
+                    "text": "Anasayfa",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Şehir & Gezi Rehberi",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Fırsatlar",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Keşfet",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Yardım",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "İletişim",
+                    "uri": "#",
+                  },
+                ]
+              }
+              title="Sayfalar"
+            />
+            <FooterMenuGroup
+              links={
+                Array [
+                  Object {
+                    "text": "İstanbul",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Ankara",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "İzmir",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "New York",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Roma",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Venedik",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Amsterdam",
+                    "uri": "#",
+                  },
+                ]
+              }
+              title="Popüler Şehirler"
+            />
+            <FooterMenuGroup
+              links={
+                Array [
+                  Object {
+                    "text": "Online Check-in",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Genel Uçuş Kuralları",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Yolcu Hakları",
+                    "uri": "#",
+                  },
+                ]
+              }
+              title="Merak Edilenler"
+            />
+            <FooterMenuGroup
+              links={
+                Array [
+                  Object {
+                    "text": "İletişim",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Twitter",
+                    "uri": "#",
+                  },
+                  Object {
+                    "text": "Facebook",
+                    "uri": "#",
+                  },
+                ]
+              }
+              title="Bize Ulaşın"
+            />
+          </div>
+        </Container>,
+        "className": "footer",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <div
+              className="branding"
+            >
+              <img
+                alt="Logo"
+                className="logo"
+                src="thy.png"
+              />
+              <p
+                className="textContent"
+              >
+                Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.
+              </p>
+            </div>,
+            <div
+              className="menu"
+            >
+              <FooterMenuGroup
+                links={
+                  Array [
+                    Object {
+                      "text": "Anasayfa",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Şehir & Gezi Rehberi",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Fırsatlar",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Keşfet",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Yardım",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "İletişim",
+                      "uri": "#",
+                    },
+                  ]
+                }
+                title="Sayfalar"
+              />
+              <FooterMenuGroup
+                links={
+                  Array [
+                    Object {
+                      "text": "İstanbul",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Ankara",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "İzmir",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "New York",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Roma",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Venedik",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Amsterdam",
+                      "uri": "#",
+                    },
+                  ]
+                }
+                title="Popüler Şehirler"
+              />
+              <FooterMenuGroup
+                links={
+                  Array [
+                    Object {
+                      "text": "Online Check-in",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Genel Uçuş Kuralları",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Yolcu Hakları",
+                      "uri": "#",
+                    },
+                  ]
+                }
+                title="Merak Edilenler"
+              />
+              <FooterMenuGroup
+                links={
+                  Array [
+                    Object {
+                      "text": "İletişim",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Twitter",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Facebook",
+                      "uri": "#",
+                    },
+                  ]
+                }
+                title="Bize Ulaşın"
+              />
+            </div>,
+          ],
+          "className": "footerContainer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  alt="Logo"
+                  className="logo"
+                  src="thy.png"
+                />,
+                <p
+                  className="textContent"
+                >
+                  Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.
+                </p>,
+              ],
+              "className": "branding",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Logo",
+                  "className": "logo",
+                  "src": "thy.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.",
+                  "className": "textContent",
+                },
+                "ref": null,
+                "rendered": "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FooterMenuGroup
+                  links={
+                    Array [
+                      Object {
+                        "text": "Anasayfa",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Şehir & Gezi Rehberi",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Fırsatlar",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Keşfet",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Yardım",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "İletişim",
+                        "uri": "#",
+                      },
+                    ]
+                  }
+                  title="Sayfalar"
+                />,
+                <FooterMenuGroup
+                  links={
+                    Array [
+                      Object {
+                        "text": "İstanbul",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Ankara",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "İzmir",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "New York",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Roma",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Venedik",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Amsterdam",
+                        "uri": "#",
+                      },
+                    ]
+                  }
+                  title="Popüler Şehirler"
+                />,
+                <FooterMenuGroup
+                  links={
+                    Array [
+                      Object {
+                        "text": "Online Check-in",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Genel Uçuş Kuralları",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Yolcu Hakları",
+                        "uri": "#",
+                      },
+                    ]
+                  }
+                  title="Merak Edilenler"
+                />,
+                <FooterMenuGroup
+                  links={
+                    Array [
+                      Object {
+                        "text": "İletişim",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Twitter",
+                        "uri": "#",
+                      },
+                      Object {
+                        "text": "Facebook",
+                        "uri": "#",
+                      },
+                    ]
+                  }
+                  title="Bize Ulaşın"
+                />,
+              ],
+              "className": "menu",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "links": Array [
+                    Object {
+                      "text": "Anasayfa",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Şehir & Gezi Rehberi",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Fırsatlar",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Keşfet",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Yardım",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "İletişim",
+                      "uri": "#",
+                    },
+                  ],
+                  "title": "Sayfalar",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "links": Array [
+                    Object {
+                      "text": "İstanbul",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Ankara",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "İzmir",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "New York",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Roma",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Venedik",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Amsterdam",
+                      "uri": "#",
+                    },
+                  ],
+                  "title": "Popüler Şehirler",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "links": Array [
+                    Object {
+                      "text": "Online Check-in",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Genel Uçuş Kuralları",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Yolcu Hakları",
+                      "uri": "#",
+                    },
+                  ],
+                  "title": "Merak Edilenler",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "links": Array [
+                    Object {
+                      "text": "İletişim",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Twitter",
+                      "uri": "#",
+                    },
+                    Object {
+                      "text": "Facebook",
+                      "uri": "#",
+                    },
+                  ],
+                  "title": "Bize Ulaşın",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "footer",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<Footer /> should match snapshot 2`] = `"<footer class=\\"footer\\"><div class=\\"container footerContainer\\"><div class=\\"branding\\"><img class=\\"logo\\" src=\\"thy.png\\" alt=\\"Logo\\"/><p class=\\"textContent\\">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.</p></div><div class=\\"menu\\"><div class=\\"container\\"><h5 class=\\"title\\">Sayfalar</h5><ul class=\\"list\\"><li class=\\"item\\"><a href=\\"#\\">Anasayfa</a></li><li class=\\"item\\"><a href=\\"#\\">Şehir &amp; Gezi Rehberi</a></li><li class=\\"item\\"><a href=\\"#\\">Fırsatlar</a></li><li class=\\"item\\"><a href=\\"#\\">Keşfet</a></li><li class=\\"item\\"><a href=\\"#\\">Yardım</a></li><li class=\\"item\\"><a href=\\"#\\">İletişim</a></li></ul></div><div class=\\"container\\"><h5 class=\\"title\\">Popüler Şehirler</h5><ul class=\\"list\\"><li class=\\"item\\"><a href=\\"#\\">İstanbul</a></li><li class=\\"item\\"><a href=\\"#\\">Ankara</a></li><li class=\\"item\\"><a href=\\"#\\">İzmir</a></li><li class=\\"item\\"><a href=\\"#\\">New York</a></li><li class=\\"item\\"><a href=\\"#\\">Roma</a></li><li class=\\"item\\"><a href=\\"#\\">Venedik</a></li><li class=\\"item\\"><a href=\\"#\\">Amsterdam</a></li></ul></div><div class=\\"container\\"><h5 class=\\"title\\">Merak Edilenler</h5><ul class=\\"list\\"><li class=\\"item\\"><a href=\\"#\\">Online Check-in</a></li><li class=\\"item\\"><a href=\\"#\\">Genel Uçuş Kuralları</a></li><li class=\\"item\\"><a href=\\"#\\">Yolcu Hakları</a></li></ul></div><div class=\\"container\\"><h5 class=\\"title\\">Bize Ulaşın</h5><ul class=\\"list\\"><li class=\\"item\\"><a href=\\"#\\">İletişim</a></li><li class=\\"item\\"><a href=\\"#\\">Twitter</a></li><li class=\\"item\\"><a href=\\"#\\">Facebook</a></li></ul></div></div></div></footer>"`;

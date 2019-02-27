@@ -1,0 +1,24 @@
+@import "../../styles/main.scss";
+
+.title {
+  color: $grey1;
+  font-family: $font-family-primary;
+  font-size: map-get($heading-sizes, h5);
+  font-weight: 600;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  a {
+    color: $grey2;
+    font-family: $font-family-primary;
+    font-size: map-get($font-sizes, small);
+    font-weight: 400;
+    line-height: px-to-rem(24px);
+    text-decoration: none;
+  }
+}
