@@ -1,7 +1,11 @@
 /* tslint:disable no-console */
 import React, { Component } from "react"
+import { connect } from "react-redux"
+import { Dispatch } from "redux"
 
 import styles from "./App.module.scss"
+import { fetchData, FetchDataAction } from "./redux/actions"
+import { ApplicationState } from "./redux/reducers"
 import {
   Filters,
   Footer,
@@ -11,9 +15,24 @@ import {
   SearchBar
 } from "./components"
 import data from "./data/mockData.json"
-import { formatData, getFilters } from "./utils"
+import { formatData, FilteringOptions, Itinerary } from "./utils"
 
-class App extends Component {
+// TODO: Add typings for filteringOptions & itineraries
+interface PropsFromDispatch {
+  fetchData: typeof fetchData
+}
+
+interface PropsFromState {
+  filteringOptions: FilteringOptions | {}
+  itineraries: Itinerary[]
+}
+
+type Props = PropsFromDispatch & PropsFromState
+
+class App extends Component<Props> {
+  public componentDidMount() {
+    this.props.fetchData()
+  }
   public render() {
     console.log(data.result.Itineraries.find(d => d.Filter.Carriers.length > 1))
     console.log(data.result.Carriers)
@@ -34,4 +53,19 @@ class App extends Component {
   }
 }
 
-export default App
+const mapStateToProps = ({
+  filteringOptions,
+  itineraries
+}: ApplicationState) => ({
+  filteringOptions,
+  itineraries
+})
+
+const mapDispatchToProps = (dispatch: Dispatch<FetchDataAction>) => ({
+  fetchData: () => dispatch(fetchData())
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App)

@@ -14,7 +14,7 @@ interface StopOptions {
   multipleStops: number
 }
 
-interface FilteringOptions {
+export interface FilteringOptions {
   airlines: Carrier[]
   airlineCodes: number[]
   durationRange: Range
@@ -48,12 +48,18 @@ interface Arrival {
   airportCode: string
 }
 
-interface Itinerary {
+export interface Itinerary {
   arrival: Arrival
+  carriers: Carrier[]
   departure: Departure
   duration: number
-  carriers: Carrier[]
+  lowestPrice: number
   stops: number
+}
+
+export interface FormattedData {
+  filteringOptions: FilteringOptions
+  itineraries: Itinerary[]
 }
 
 export const getFilters = (data: any[]): FilteringOptions => {
@@ -161,7 +167,8 @@ export const getItineraries = (data: any[]): Itinerary[] => {
       const carriers: Carrier[] = itinerary.MergedLeg.Carriers.map(
         convertCarrierData
       )
-      return { arrival, departure, duration, carriers, stops }
+      const lowestPrice: number = itinerary.Order.lowestPrice
+      return { arrival, carriers, departure, duration, lowestPrice, stops }
     }
   )
 }
@@ -174,7 +181,7 @@ const convertCarrierData = (carrier: CarrierRaw): Carrier => ({
   displayCode: carrier.DisplayCode
 })
 
-export const formatData = (data: any[]) => {
+export const formatData = (data: any[]): FormattedData => {
   const filteringOptions: FilteringOptions = getFilters(data)
   const itineraries: Itinerary[] = getItineraries(data)
   mockData.result.Itineraries[0].MergedLeg.Carriers
