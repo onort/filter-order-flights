@@ -1,0 +1,81 @@
+@import "../../styles/main.scss";
+
+.row {
+  display: grid;
+  background-color: $element-bg;
+  grid-column-gap: map-get($spacers, normal);
+  grid-template-columns: 2fr 1fr !important;
+}
+
+.legs,
+.prices {
+  background-color: $white;
+  border-radius: px-to-rem(2px);
+}
+
+.legs {
+  padding: 0 !important;
+}
+
+.legRow {
+  display: grid;
+  padding: 0 !important;
+  border-bottom: none !important;
+  grid-template-columns: 1fr px-to-rem(170px) 1fr 2fr !important;
+}
+
+.priceOption {
+  display: flex;
+  margin-bottom: map-get($spacers, normal);
+
+  span {
+    display: block;
+    color: $grey2;
+    font-family: $font-family-primary;
+    font-size: map-get($font-sizes, x-small);
+    font-weight: 400;
+
+    &.price {
+      flex: 4;
+      font-weight: 600;
+    }
+
+    &.agent {
+      flex: 7;
+    }
+  }
+}
+
+.durationContainer {
+  text-align: center;
+}
+
+.duration {
+  color: $grey2;
+  font-family: $font-family-primary;
+  font-size: map-get($heading-sizes, h5);
+  font-weight: 400;
+}
+
+.pointedLine {
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $grey2;
+}
+
+.pointedLine::after,
+.pointedLine::before {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: $grey2;
+  border-radius: 50%;
+  content: "";
+}
+
+.pointedLine::after {
+  right: 0;
+  left: auto;
+}

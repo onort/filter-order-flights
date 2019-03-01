@@ -12,7 +12,8 @@ import Header from "./Header"
 import NavItem from "./NavItem"
 import OrderResults from "./OrderResults"
 import Results from "./Results"
-import ResultsTable from "./ResultsTable"
+import ResultDetails from "./ResultDetails"
+import ResultsTable, { Cell, DataCell, Row } from "./ResultsTable"
 import SearchBar from "./SearchBar"
 import SearchForm from "./SearchForm"
 import Slider from "./Slider"
@@ -20,8 +21,10 @@ import Slider from "./Slider"
 export {
   Button,
   Card,
+  Cell,
   CheckBox,
   Container,
+  DataCell,
   Dropdown,
   Filters,
   FilterSection,
@@ -32,7 +35,9 @@ export {
   NavItem,
   OrderResults,
   Results,
+  ResultDetails,
   ResultsTable,
+  Row,
   SearchBar,
   SearchForm,
   Slider

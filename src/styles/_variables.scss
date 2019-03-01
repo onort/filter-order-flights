@@ -30,8 +30,9 @@ $red: #f12a15;
 $blue: #40afff;
 $dark-blue: #1962af;
 
-// #F2F2F2 is not listed on color palette, figma compatibility issue?
+// #F2F2F2, #F6F7F9 is not listed on color palette, figma compatibility issue?
 $body-bg: #f2f2f2;
+$element-bg: #f6f7f9;
 
 $primary: $red;
 $secondary: $blue;
@@ -55,7 +56,8 @@ $heading-sizes: (
 $font-sizes: (
   large: px-to-rem(18px),
   normal: $font-size-root,
-  small: px-to-rem(14px)
+  small: px-to-rem(14px),
+  x-small: px-to-rem(12px)
 );
 
 $spacer: $font-size-root;

@@ -10,7 +10,7 @@ $priceCellPaddingVertical: map-get($spacers, normal);
 
 .row {
   display: grid;
-  padding: map-get($spacers, small);
+  padding: map-get($spacers, small) map-get($spacers, normal);
   border-bottom: 1px solid $muted-border;
   grid-template-columns: repeat(4, 1fr) 2fr;
 
@@ -24,6 +24,11 @@ $priceCellPaddingVertical: map-get($spacers, normal);
     font-weight: 600;
     grid-template-columns: repeat(6, 1fr);
   }
+
+  &.active {
+    border-bottom: none;
+    background-color: $element-bg;
+  }
 }
 
 .cell {
@@ -36,7 +41,8 @@ $priceCellPaddingVertical: map-get($spacers, normal);
   }
 }
 
-.dataCell {
+.dataCell,
+.carrierCell {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,6 +50,18 @@ $priceCellPaddingVertical: map-get($spacers, normal);
   span {
     display: block;
   }
+}
+
+.carrierName {
+  color: $grey2;
+  font-family: $font-family-primary;
+  font-size: map-get($heading-sizes, h5);
+  font-weight: 400;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
 }
 
 .val {
@@ -63,7 +81,7 @@ $priceCellPaddingVertical: map-get($spacers, normal);
   display: flex;
   justify-content: space-between;
   padding: $priceCellPaddingVertical $priceCellPaddingHorizontal;
-  background-color: $grey5;
+  background-color: $element-bg;
   border-radius: px-to-rem(2px);
 }
 
