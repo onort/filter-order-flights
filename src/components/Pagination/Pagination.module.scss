@@ -1,0 +1,32 @@
+@import "../../styles/main.scss";
+
+.paginationContainer {
+  display: flex;
+  width: 1120px;
+  justify-content: flex-end;
+  margin: map-get($spacers, normal) 0;
+}
+
+.page {
+  display: flex;
+  width: px-to-rem(40px);
+  height: px-to-rem(40px);
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-left: map-get($spacers, small);
+  background-color: $white;
+  border-radius: px-to-rem(2px);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.233752);
+  color: $black;
+  cursor: pointer;
+  font-family: $font-family-primary;
+  font-size: map-get($font-sizes, small);
+  font-weight: 400;
+
+  &.active {
+    background-color: $primary;
+    box-shadow: none;
+    color: $white;
+  }
+}

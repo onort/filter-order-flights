@@ -11,6 +11,7 @@ import FooterMenuGroup from "./FooterMenuGroup"
 import Header from "./Header"
 import NavItem from "./NavItem"
 import OrderResults from "./OrderResults"
+import Pagination from "./Pagination"
 import Results from "./Results"
 import ResultDetails from "./ResultDetails"
 import ResultsTable, { Cell, DataCell, Row } from "./ResultsTable"
@@ -34,6 +35,7 @@ export {
   Header,
   NavItem,
   OrderResults,
+  Pagination,
   Results,
   ResultDetails,
   ResultsTable,

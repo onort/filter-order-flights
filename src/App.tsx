@@ -13,10 +13,16 @@ import {
   Header,
   OrderResults,
   Results,
-  SearchBar
+  SearchBar,
+  Pagination
 } from "./components"
 import data from "./data/mockData.json"
 import { formatData } from "./utils"
+
+interface State {
+  activeIndex: number
+  totalPages: number
+}
 
 interface PropsFromDispatch {
   fetchData: typeof fetchData
@@ -29,16 +35,43 @@ interface PropsFromState {
 
 type Props = PropsFromDispatch & PropsFromState
 
-class App extends Component<Props> {
+class App extends Component<Props, State> {
+  public itemsPerPage: number = 10
+
+  public state = {
+    activeIndex: 1,
+    totalPages: Math.ceil(this.props.itineraries.length / this.itemsPerPage)
+  }
+
   public componentDidMount() {
     this.props.fetchData()
   }
+
+  public componentDidUpdate(prevProps: Props) {
+    if (prevProps.itineraries.length !== this.props.itineraries.length) {
+      this.setState({
+        totalPages: Math.ceil(this.props.itineraries.length / this.itemsPerPage)
+      })
+    }
+  }
+
+  public handlePagintionClick = (page: number) => {
+    this.setState({ activeIndex: page })
+    // TO DECIDE: Scroll to ResultsTable instead of 0
+    window.scrollTo(0, 0)
+  }
+
   public render() {
     // console.log(data.result.Itineraries.find(d => d.Filter.Carriers.length > 1))
-    console.log(
-      data.result.Itineraries.find(i => i.OutboundLegId.Segments.length > 1)
-    )
+    // console.log(
+    //   data.result.Itineraries.find(i => i.OutboundLegId.Segments.length > 1)
+    // )
     // console.log("Format Data", formatData(data.result.Itineraries))
+    const { activeIndex, totalPages } = this.state
+    const dataToShow = this.props.itineraries.slice(
+      (activeIndex - 1) * this.itemsPerPage,
+      activeIndex * this.itemsPerPage
+    )
     return (
       <div className={styles.app}>
         <Header />
@@ -47,7 +80,12 @@ class App extends Component<Props> {
         {this.props.itineraries.length > 0 && (
           <div className={styles.main}>
             <Filters />
-            <Results data={this.props.itineraries} />
+            <Results data={dataToShow} />
+            <Pagination
+              activeIndex={activeIndex}
+              totalPages={totalPages}
+              onClick={this.handlePagintionClick}
+            />
           </div>
         )}
         <SearchBar type="secondary" />

@@ -1,9 +1,10 @@
 import { Reducer } from "redux"
 
 import { DataActionTypes, FetchDataAction } from "../actions"
+import { Itinerary } from "../../types"
 
-const itinerariesReducer: Reducer<{}, FetchDataAction> = (
-  state = {},
+const itinerariesReducer: Reducer<Itinerary[], FetchDataAction> = (
+  state = [],
   action: FetchDataAction
 ) => {
   switch (action.type) {

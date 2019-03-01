@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Pagination
+    activeIndex={1}
+    onClick={[MockFunction]}
+    totalPages={2}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Container
+        className="paginationContainer"
+      >
+        <button
+          className="page active"
+          onClick={[Function]}
+        >
+          1
+        </button>
+        <button
+          className="page"
+          onClick={[Function]}
+        >
+          2
+        </button>
+      </Container>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <button
+            className="page active"
+            onClick={[Function]}
+          >
+            1
+          </button>,
+          <button
+            className="page"
+            onClick={[Function]}
+          >
+            2
+          </button>,
+        ],
+        "className": "paginationContainer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": 1,
+            "className": "page active",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": 1,
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": 2,
+            "className": "page",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": 2,
+          "type": "button",
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Container
+          className="paginationContainer"
+        >
+          <button
+            className="page active"
+            onClick={[Function]}
+          >
+            1
+          </button>
+          <button
+            className="page"
+            onClick={[Function]}
+          >
+            2
+          </button>
+        </Container>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <button
+              className="page active"
+              onClick={[Function]}
+            >
+              1
+            </button>,
+            <button
+              className="page"
+              onClick={[Function]}
+            >
+              2
+            </button>,
+          ],
+          "className": "paginationContainer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": 1,
+              "className": "page active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": 2,
+              "className": "page",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 2,
+            "type": "button",
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<Pagination /> should match snapshot 2`] = `"<section><div class=\\"container paginationContainer\\"><button class=\\"page active\\">1</button><button class=\\"page\\">2</button></div></section>"`;
