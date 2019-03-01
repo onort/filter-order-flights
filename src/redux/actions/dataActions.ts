@@ -3,7 +3,8 @@
 import { DataActionTypes as types } from "./actionTypes"
 
 import mockData from "../../data/mockData.json"
-import { formatData, FormattedData } from "../../utils"
+import { formatData } from "../../utils"
+import { FormattedData } from "../../types"
 
 export interface FetchDataAction {
   type: types.FETCH_DATA

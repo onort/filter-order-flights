@@ -2,14 +2,19 @@ import React, { Component } from "react"
 
 import styles from "./Results.module.scss"
 
+import { Itinerary } from "../../types"
 import { Card, ResultsTable } from "../"
 
-class Results extends Component {
+interface Props {
+  data: Itinerary[]
+}
+
+class Results extends Component<Props> {
   public render() {
     return (
       <main className={styles.container}>
         <Card>
-          <ResultsTable />
+          <ResultsTable data={this.props.data} />
         </Card>
       </main>
     )

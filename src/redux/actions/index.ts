@@ -1,6 +1,6 @@
-import { DataActionTypes } from "./actionTypes"
-import { fetchData, DataAction } from "./dataActions"
+import { DataActionTypes, FilterActionTypes } from "./actionTypes"
 
 export * from "./dataActions"
+export * from "./filterActions"
 
-export { DataActionTypes, fetchData }
+export { DataActionTypes, FilterActionTypes }

@@ -6,6 +6,7 @@ import { Dispatch } from "redux"
 import styles from "./App.module.scss"
 import { fetchData, FetchDataAction } from "./redux/actions"
 import { ApplicationState } from "./redux/reducers"
+import { FilteringOptions, Itinerary } from "./types"
 import {
   Filters,
   Footer,
@@ -15,15 +16,14 @@ import {
   SearchBar
 } from "./components"
 import data from "./data/mockData.json"
-import { formatData, FilteringOptions, Itinerary } from "./utils"
+import { formatData } from "./utils"
 
-// TODO: Add typings for filteringOptions & itineraries
 interface PropsFromDispatch {
   fetchData: typeof fetchData
 }
 
 interface PropsFromState {
-  filteringOptions: FilteringOptions | {}
+  filteringOptions: FilteringOptions
   itineraries: Itinerary[]
 }
 
@@ -34,18 +34,22 @@ class App extends Component<Props> {
     this.props.fetchData()
   }
   public render() {
-    console.log(data.result.Itineraries.find(d => d.Filter.Carriers.length > 1))
-    console.log(data.result.Carriers)
-    console.log("Format Data", formatData(data.result.Itineraries))
+    // console.log(data.result.Itineraries.find(d => d.Filter.Carriers.length > 1))
+    console.log(
+      data.result.Itineraries.find(i => i.OutboundLegId.Segments.length > 1)
+    )
+    // console.log("Format Data", formatData(data.result.Itineraries))
     return (
       <div className={styles.app}>
         <Header />
         <SearchBar type="primary" />
         <OrderResults flightCount={25} />
-        <div className={styles.main}>
-          <Filters />
-          <Results />
-        </div>
+        {this.props.itineraries.length > 0 && (
+          <div className={styles.main}>
+            <Filters />
+            <Results data={this.props.itineraries} />
+          </div>
+        )}
         <SearchBar type="secondary" />
         <Footer />
       </div>

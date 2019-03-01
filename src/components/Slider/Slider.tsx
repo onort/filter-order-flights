@@ -8,7 +8,7 @@ interface Props {
   currentValue: number
   max: number
   min: number
-  onChange: (e: React.ChangeEvent<HTMLElement>) => void
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 // TODO: Slide track color

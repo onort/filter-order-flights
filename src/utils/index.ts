@@ -1,66 +1,17 @@
 /* tslint:disable */
 import mockData from "../data/mockData.json"
-
-// TODO: Move types to antoher file
-
-interface Range {
-  max: number
-  min: number
-}
-
-interface StopOptions {
-  direct: number
-  singleStop: number
-  multipleStops: number
-}
-
-export interface FilteringOptions {
-  airlines: Carrier[]
-  airlineCodes: number[]
-  durationRange: Range
-  priceRange: Range
-  stops: StopOptions
-}
-
-interface CarrierRaw {
-  Id: number
-  Code: string
-  Name: string
-  ImageUrl: string
-  DisplayCode: string
-}
-
-interface Carrier {
-  id: number
-  code: string
-  imgUrl: string
-  name: string
-  displayCode: string
-}
-
-interface Departure {
-  time: string
-  airportCode: string
-}
-
-interface Arrival {
-  time: string
-  airportCode: string
-}
-
-export interface Itinerary {
-  arrival: Arrival
-  carriers: Carrier[]
-  departure: Departure
-  duration: number
-  lowestPrice: number
-  stops: number
-}
-
-export interface FormattedData {
-  filteringOptions: FilteringOptions
-  itineraries: Itinerary[]
-}
+import {
+  Carrier,
+  CarrierRaw,
+  FilteringOptions,
+  Flight,
+  FormattedData,
+  Itinerary,
+  Leg,
+  PricingOption,
+  Range,
+  StopOptions
+} from "../types"
 
 export const getFilters = (data: any[]): FilteringOptions => {
   const filteringOptions: FilteringOptions = {
@@ -154,23 +105,73 @@ const getDurationRange = (durationRange: Range, itinerary: any): Range => {
 export const getItineraries = (data: any[]): Itinerary[] => {
   return data.map(
     (itinerary: any): Itinerary => {
-      const departure: Departure = {
-        time: itinerary.OutboundLegId.Departure,
-        airportCode: itinerary.OutboundLegId.OriginStation.Code
-      }
-      const arrival: Arrival = {
+      const destination: Flight = {
         time: itinerary.OutboundLegId.Arrival,
         airportCode: itinerary.OutboundLegId.DestinationStation.Code
       }
-      const duration: number = itinerary.MergedLeg.Duration
-      const stops: number = itinerary.Filter.Stops
+      const origin: Flight = {
+        time: itinerary.OutboundLegId.Departure,
+        airportCode: itinerary.OutboundLegId.OriginStation.Code
+      }
       const carriers: Carrier[] = itinerary.MergedLeg.Carriers.map(
         convertCarrierData
       )
+      const duration: number = itinerary.MergedLeg.Duration
+      const id: string = itinerary.OutboundLegId.Id
+      const legs: Leg[] = itinerary.OutboundLegId.Segments.map(getLegData)
       const lowestPrice: number = itinerary.Order.lowestPrice
-      return { arrival, carriers, departure, duration, lowestPrice, stops }
+      const pricingOptions: PricingOption[] = itinerary.PricingOptions.map(
+        getPricingOption
+      )
+      const stops: number = itinerary.Filter.Stops
+      return {
+        carriers,
+        destination,
+        duration,
+        id,
+        legs,
+        lowestPrice,
+        origin,
+        pricingOptions,
+        stops
+      }
     }
   )
+}
+
+const getLegData = (leg: any): Leg => {
+  const {
+    ArrivalDateTime,
+    Carrier: { DisplayCode, Name: carrierName },
+    DepartureDateTime,
+    DestinationStation: { Code: destinationCode, Name: destinationName },
+    Duration,
+    FlightNumber,
+    OriginStation: { Code: originCode, Name: originName }
+  } = leg
+  const departure: Flight = {
+    time: DepartureDateTime,
+    airportCode: originCode,
+    airportName: originName
+  }
+  const arrival: Flight = {
+    time: ArrivalDateTime,
+    airportCode: destinationCode,
+    airportName: destinationName
+  }
+  const flightCode: string = `${DisplayCode} ${FlightNumber}`
+  return {
+    arrival,
+    carrier: carrierName,
+    departure,
+    duration: Duration,
+    flightCode
+  }
+}
+
+const getPricingOption = (option: any): PricingOption => {
+  const { Agents, Price } = option
+  return { agent: Agents[0].Name, price: Price }
 }
 
 const convertCarrierData = (carrier: CarrierRaw): Carrier => ({
@@ -186,4 +187,12 @@ export const formatData = (data: any[]): FormattedData => {
   const itineraries: Itinerary[] = getItineraries(data)
   mockData.result.Itineraries[0].MergedLeg.Carriers
   return { filteringOptions, itineraries }
+}
+
+export const minsToString = (mins: number) => {
+  const hours = Math.floor(mins / 60).toFixed(0)
+  const minutes = mins % 60
+  return `${mins / 60 > 1 ? hours + " saat " : ""}${
+    minutes > 0 ? minutes + " dakika" : ""
+  }`
 }

@@ -1,9 +1,14 @@
 import React from "react"
 
 import styles from "./ResultsTable.module.scss"
+import { Itinerary } from "../../types"
 import { Cell, Result, Row } from "./"
 
-const ResultsTable: React.SFC = props => {
+interface Props {
+  data: Itinerary[]
+}
+
+const ResultsTable: React.SFC<Props> = props => {
   return (
     <div className={styles.container}>
       <Row className={styles.header}>
@@ -14,9 +19,9 @@ const ResultsTable: React.SFC = props => {
         <Cell>Fiyat</Cell>
         <Cell>Satın Al</Cell>
       </Row>
-      <Result />
-      <Result />
-      <Result />
+      {props.data.map(itinerary => (
+        <Result key={itinerary.id} itinerary={itinerary} />
+      ))}
     </div>
   )
 }

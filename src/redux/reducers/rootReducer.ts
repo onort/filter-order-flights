@@ -1,14 +1,17 @@
 import { combineReducers, Reducer } from "redux"
 
-import { filteringOptionsReducer, itinerariesReducer } from "./"
+import { filteringOptionsReducer, filtersReducer, itinerariesReducer } from "./"
+import { FilteringOptions, FiltersState, Itinerary } from "../../types"
 
 export interface ApplicationState {
-  readonly filteringOptions: object
-  readonly itineraries: any[]
+  readonly filteringOptions: FilteringOptions
+  readonly filters: FiltersState
+  readonly itineraries: Itinerary[]
 }
 
 export const rootReducer: Reducer = combineReducers({
   filteringOptions: filteringOptionsReducer,
+  filters: filtersReducer,
   itineraries: itinerariesReducer
 })
 
