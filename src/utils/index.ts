@@ -1,4 +1,4 @@
-/* tslint:disable */
+/* tslint:disable prefer-template */
 import mockData from "../data/mockData.json"
 import {
   Carrier,
@@ -15,7 +15,6 @@ import {
 
 export const getFilters = (data: any[]): FilteringOptions => {
   const filteringOptions: FilteringOptions = {
-    airlineCodes: [],
     airlines: [],
     durationRange: { max: 0, min: 0 },
     priceRange: { max: 0, min: 0 },
@@ -31,8 +30,8 @@ export const getFilters = (data: any[]): FilteringOptions => {
       filteringOptions.durationRange,
       itinerary
     )
-    filteringOptions.airlineCodes = getAirlines(
-      filteringOptions.airlineCodes,
+    filteringOptions.airlines = getAirlinesData(
+      filteringOptions.airlines,
       itinerary
     )
   })
@@ -40,9 +39,11 @@ export const getFilters = (data: any[]): FilteringOptions => {
   return filteringOptions
 }
 
-const getAirlines = (airlines: any, itinerary: any) => {
-  itinerary.Filter.Carriers.forEach((carrier: number) => {
-    if (!airlines.includes(carrier)) airlines.push(carrier)
+const getAirlinesData = (airlines: Carrier[], itinerary: any) => {
+  itinerary.OutboundLegId.Segments.forEach((segment: any) => {
+    if (!airlines.find(airline => airline.id === segment.Carrier.Id)) {
+      airlines.push(convertCarrierData(segment.Carrier))
+    }
   })
   return airlines
 }
@@ -106,12 +107,12 @@ export const getItineraries = (data: any[]): Itinerary[] => {
   return data.map(
     (itinerary: any): Itinerary => {
       const destination: Flight = {
-        time: itinerary.OutboundLegId.Arrival,
-        airportCode: itinerary.OutboundLegId.DestinationStation.Code
+        airportCode: itinerary.OutboundLegId.DestinationStation.Code,
+        time: itinerary.OutboundLegId.Arrival
       }
       const origin: Flight = {
-        time: itinerary.OutboundLegId.Departure,
-        airportCode: itinerary.OutboundLegId.OriginStation.Code
+        airportCode: itinerary.OutboundLegId.OriginStation.Code,
+        time: itinerary.OutboundLegId.Departure
       }
       const carriers: Carrier[] = itinerary.MergedLeg.Carriers.map(
         convertCarrierData
@@ -150,14 +151,14 @@ const getLegData = (leg: any): Leg => {
     OriginStation: { Code: originCode, Name: originName }
   } = leg
   const departure: Flight = {
-    time: DepartureDateTime,
     airportCode: originCode,
-    airportName: originName
+    airportName: originName,
+    time: DepartureDateTime
   }
   const arrival: Flight = {
-    time: ArrivalDateTime,
     airportCode: destinationCode,
-    airportName: destinationName
+    airportName: destinationName,
+    time: ArrivalDateTime
   }
   const flightCode: string = `${DisplayCode} ${FlightNumber}`
   return {
@@ -175,17 +176,16 @@ const getPricingOption = (option: any): PricingOption => {
 }
 
 const convertCarrierData = (carrier: CarrierRaw): Carrier => ({
-  id: carrier.Id,
   code: carrier.Code,
+  displayCode: carrier.DisplayCode,
+  id: carrier.Id,
   imgUrl: carrier.ImageUrl,
-  name: carrier.Name,
-  displayCode: carrier.DisplayCode
+  name: carrier.Name
 })
 
 export const formatData = (data: any[]): FormattedData => {
   const filteringOptions: FilteringOptions = getFilters(data)
   const itineraries: Itinerary[] = getItineraries(data)
-  mockData.result.Itineraries[0].MergedLeg.Carriers
   return { filteringOptions, itineraries }
 }
 

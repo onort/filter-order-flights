@@ -44,3 +44,10 @@
     color: #13bba4;
   }
 }
+
+.sliderTrack {
+  position: absolute;
+  width: 100%;
+  height: px-to-rem(2px);
+  background-color: $primary;
+}

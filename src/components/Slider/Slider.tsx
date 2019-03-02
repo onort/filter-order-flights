@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-block-trailing-semicolon */
 import React from "react"
 import cx from "classnames"
 
@@ -11,12 +12,16 @@ interface Props {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-// TODO: Slide track color
 const Slider: React.SFC<Props> = props => {
   const { currentValue, max, min, onChange } = props
   const classNames = cx(styles.container, props.className)
+  const trackerWidth = (currentValue / max) * 100 - 2
   return (
     <div className={classNames}>
+      <div
+        className={styles.sliderTrack}
+        style={{ width: `${trackerWidth}%` }}
+      />
       <input
         type="range"
         min={min}

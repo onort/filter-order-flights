@@ -16,15 +16,17 @@ export interface CarrierRaw {
 
 export interface FilteringOptions {
   airlines: Carrier[]
-  airlineCodes: number[]
   durationRange: Range
   priceRange: Range
   stops: StopOptions
 }
 
 export interface FiltersState {
+  airlines: number[]
+  classes: string[]
   maxDuration: number
   maxPrice: number
+  stops: string[]
 }
 
 export interface Flight {
@@ -77,4 +79,5 @@ export interface StopOptions {
   direct: number
   singleStop: number
   multipleStops: number
+  [key: string]: number
 }
