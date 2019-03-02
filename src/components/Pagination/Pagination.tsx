@@ -1,4 +1,3 @@
-/* tslint:disable jsx-no-lambda */
 import React from "react"
 import cx from "classnames"
 
@@ -24,7 +23,7 @@ const Pagination: React.SFC<Props> = props => {
             className={cx(styles.page, {
               [styles.active]: activeIndex === pageNumber
             })}
-            onClick={() => props.onClick(pageNumber)}
+            onClick={props.onClick.bind(null, pageNumber)}
           >
             {pageNumber}
           </button>

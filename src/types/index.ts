@@ -58,6 +58,11 @@ export interface Leg {
   flightCode: string
 }
 
+export interface OrderingOption {
+  text: string
+  value: string
+}
+
 export interface PricingOption {
   agent: string
   price: number

@@ -3,6 +3,7 @@
 .container {
   display: flex;
   max-width: 1120px;
+  align-items: center;
   justify-content: space-between;
   margin: map-get($spacers, x-large) auto map-get($spacers, large);
 }

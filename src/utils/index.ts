@@ -196,3 +196,15 @@ export const minsToString = (mins: number) => {
     minutes > 0 ? minutes + " dakika" : ""
   }`
 }
+
+export const orderByPrice = (data: Itinerary[], direction: 1 | -1) => {
+  return data.sort((a, b) => direction * (a.lowestPrice - b.lowestPrice))
+}
+
+export const orderByDate = (data: Itinerary[], direction: 1 | -1) => {
+  return data.sort(
+    (a, b) =>
+      direction *
+      (new Date(a.origin.time).getTime() - new Date(b.origin.time).getTime())
+  )
+}

@@ -2,6 +2,7 @@
 
 .container {
   display: flex;
+  align-items: center;
 }
 
 .title {
@@ -13,6 +14,25 @@
   font-weight: 600;
 }
 
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: px-to-rem(5px) solid $grey3;
+  border-right: px-to-rem(5px) solid transparent;
+  border-left: px-to-rem(5px) solid transparent;
+}
+
+.arrowUp {
+  border-top: none;
+  border-bottom: px-to-rem(5px) solid $grey3;
+}
+
 .dropdown {
   position: relative;
   display: block;
@@ -21,6 +41,7 @@
   margin-left: 1rem;
   background-color: $white;
   color: $grey3;
+  cursor: pointer;
   font-family: $font-family-heading;
   font-size: map-get($heading-sizes, h4);
   font-weight: 600;
@@ -28,8 +49,23 @@
 
 .dropdownList {
   position: absolute;
-  top: 20px;
+  z-index: 2;
+  top: px-to-rem(30px);
   left: 0;
   display: block;
   width: px-to-rem(230px);
+  padding: 0;
+  background-color: $white;
+  border-radius: px-to-rem(2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.dropdownItem {
+  padding: map-get($spacers, small) map-get($spacers, normal);
+  cursor: pointer;
+  list-style: none;
+
+  &:hover {
+    background-color: $grey5;
+  }
 }

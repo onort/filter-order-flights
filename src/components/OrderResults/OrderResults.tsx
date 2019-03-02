@@ -1,15 +1,19 @@
 import React from "react"
 
 import styles from "./OrderResults.module.scss"
+import { OrderingOption } from "../../types"
 import { Dropdown } from "../"
 
 interface Props {
   className?: string
   flightCount: number
+  onOrderSelect: (value: string) => void
+  orderingOptions: OrderingOption[]
+  selectedOrder: OrderingOption
 }
 
 const OrderResults: React.SFC<Props> = props => {
-  const { flightCount } = props
+  const { flightCount, onOrderSelect, orderingOptions, selectedOrder } = props
   return (
     <section className={styles.container}>
       {flightCount > 0 && (
@@ -17,7 +21,12 @@ const OrderResults: React.SFC<Props> = props => {
           {flightCount} Uçuş Listeleniyor
         </span>
       )}
-      <Dropdown title="Sıralama" selectedItem="Option A" />
+      <Dropdown
+        title="Sıralama"
+        selectedOrder={selectedOrder}
+        orderingOtions={orderingOptions}
+        onSelect={onOrderSelect}
+      />
     </section>
   )
 }

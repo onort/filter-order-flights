@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dropdown /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Dropdown
+    onSelect={[Function]}
+    orderingOtions={
+      Array [
+        Object {
+          "text": "Ucuzdan Pahalıya",
+          "value": "minPrice",
+        },
+        Object {
+          "text": "Pahalıdan Ucuza",
+          "value": "maxPrice",
+        },
+        Object {
+          "text": "Tarihe Göre Yakın",
+          "value": "closest",
+        },
+        Object {
+          "text": "Tarihe Göre Uzak",
+          "value": "farthest",
+        },
+      ]
+    }
+    selectedOrder={
+      Object {
+        "text": "Ucuzdan Pahalıya",
+        "value": "minPrice",
+      }
+    }
+    title="Dropdown"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="title"
+        >
+          Dropdown
+        </span>,
+        <div
+          className="dropdown"
+        >
+          <div
+            className="selected"
+            onClick={[Function]}
+          >
+            <div
+              className="selectedItem"
+            >
+              Ucuzdan Pahalıya
+            </div>
+            <div
+              className="arrow"
+            />
+          </div>
+        </div>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Dropdown",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "Dropdown",
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="selected"
+              onClick={[Function]}
+            >
+              <div
+                className="selectedItem"
+              >
+                Ucuzdan Pahalıya
+              </div>
+              <div
+                className="arrow"
+              />
+            </div>,
+            false,
+          ],
+          "className": "dropdown",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="selectedItem"
+                >
+                  Ucuzdan Pahalıya
+                </div>,
+                <div
+                  className="arrow"
+                />,
+              ],
+              "className": "selected",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Ucuzdan Pahalıya",
+                  "className": "selectedItem",
+                },
+                "ref": null,
+                "rendered": "Ucuzdan Pahalıya",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "arrow",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          false,
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="title"
+          >
+            Dropdown
+          </span>,
+          <div
+            className="dropdown"
+          >
+            <div
+              className="selected"
+              onClick={[Function]}
+            >
+              <div
+                className="selectedItem"
+              >
+                Ucuzdan Pahalıya
+              </div>
+              <div
+                className="arrow"
+              />
+            </div>
+          </div>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Dropdown",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "Dropdown",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="selected"
+                onClick={[Function]}
+              >
+                <div
+                  className="selectedItem"
+                >
+                  Ucuzdan Pahalıya
+                </div>
+                <div
+                  className="arrow"
+                />
+              </div>,
+              false,
+            ],
+            "className": "dropdown",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="selectedItem"
+                  >
+                    Ucuzdan Pahalıya
+                  </div>,
+                  <div
+                    className="arrow"
+                  />,
+                ],
+                "className": "selected",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Ucuzdan Pahalıya",
+                    "className": "selectedItem",
+                  },
+                  "ref": null,
+                  "rendered": "Ucuzdan Pahalıya",
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "arrow",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            false,
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`<Dropdown /> should match snapshot 2`] = `"<div class=\\"container\\"><span class=\\"title\\">Dropdown</span><div class=\\"dropdown\\"><div class=\\"selected\\"><div class=\\"selectedItem\\">Ucuzdan Pahalıya</div><div class=\\"arrow\\"></div></div></div></div>"`;

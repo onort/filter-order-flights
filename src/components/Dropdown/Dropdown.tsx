@@ -1,21 +1,28 @@
 import React, { Component } from "react"
+import cx from "classnames"
 
 import styles from "./Dropdown.module.scss"
+import { OrderingOption } from "../../types"
 
 interface Props {
-  selectedItem?: string
+  onSelect: (value: string) => void
+  orderingOtions: OrderingOption[]
+  selectedOrder: OrderingOption
   title?: string
 }
 
 interface State {
   open: boolean
-  selectedItem: string
 }
 
 class Dropdown extends Component<Props, State> {
   public state = {
-    open: false,
-    selectedItem: this.props.selectedItem ? this.props.selectedItem : ""
+    open: false
+  }
+
+  public handleSelect = (value: string) => {
+    this.props.onSelect(value)
+    this.toggle()
   }
 
   public toggle = () => {
@@ -23,19 +30,27 @@ class Dropdown extends Component<Props, State> {
   }
 
   public render() {
-    const { title } = this.props
-    const { open, selectedItem } = this.state
+    const { title, orderingOtions, selectedOrder } = this.props
+    const { open } = this.state
     return (
       <div className={styles.container}>
         {title && <span className={styles.title}>{title}</span>}
         <div className={styles.dropdown}>
           <div className={styles.selected} onClick={this.toggle}>
-            <div className={styles.selectedItem}>{selectedItem}</div>
+            <div className={styles.selectedItem}>{selectedOrder.text}</div>
+            <div className={cx(styles.arrow, { [styles.arrowUp]: open })} />
           </div>
           {open && (
             <ul className={styles.dropdownList}>
-              <li className={styles.dropdownItem}>Option A</li>
-              <li className={styles.dropdownItem}>Option B</li>
+              {orderingOtions.map(option => (
+                <li
+                  key={option.value}
+                  className={styles.dropdownItem}
+                  onClick={this.handleSelect.bind(this, option.value)}
+                >
+                  {option.text}
+                </li>
+              ))}
             </ul>
           )}
         </div>
