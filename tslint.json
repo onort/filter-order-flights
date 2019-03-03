@@ -10,6 +10,7 @@
   "rules": {
     "import-name": false,
     "interface-name": false,
+    "no-else-after-return": false,
     "object-shorthand-properties-first": false,
     "ordered-imports": false,
     "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"]

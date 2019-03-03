@@ -16,9 +16,13 @@ const OrderResults: React.SFC<Props> = props => {
   const { flightCount, onOrderSelect, orderingOptions, selectedOrder } = props
   return (
     <section className={styles.container}>
-      {flightCount > 0 && (
+      {flightCount > 0 ? (
         <span className={styles.flightCount}>
           {flightCount} Uçuş Listeleniyor
+        </span>
+      ) : (
+        <span className={styles.flightCount}>
+          Kriterlere Uygun Uçuş Bulunamadı
         </span>
       )}
       <Dropdown

@@ -21,6 +21,16 @@
   text-transform: uppercase;
 }
 
+.infoText {
+  display: block;
+  margin-right: auto;
+  margin-left: map-get($spacers, x-small);
+  color: $primary;
+  font-family: $font-family-primary;
+  font-size: map-get($heading-sizes, h5);
+  font-weight: 600;
+}
+
 .selectAll {
   display: block;
   color: #bdc0c8;

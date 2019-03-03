@@ -50,6 +50,7 @@ export interface Itinerary {
   origin: Flight
   pricingOptions: PricingOption[]
   stops: number
+  stopsType: StopsType
 }
 
 export interface Leg {
@@ -80,4 +81,10 @@ export interface StopOptions {
   singleStop: number
   multipleStops: number
   [key: string]: number
+}
+
+export enum StopsType {
+  direct = "direct",
+  singleStop = "singleStop",
+  multipleStops = "multipleStops"
 }

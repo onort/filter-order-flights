@@ -10,7 +10,8 @@ import {
   Leg,
   PricingOption,
   Range,
-  StopOptions
+  StopOptions,
+  StopsType
 } from "../types"
 
 export const getFilters = (data: any[]): FilteringOptions => {
@@ -46,24 +47,6 @@ const getAirlinesData = (airlines: Carrier[], itinerary: any) => {
     }
   })
   return airlines
-}
-
-const getAirlineData = (codeNumber: number) => {
-  // get airline data from Itineraries
-  const carriers: CarrierRaw[] = mockData.result.Carriers
-  const airlineRawData: CarrierRaw | undefined = carriers.find(
-    el => el.Id === codeNumber
-  )
-  if (airlineRawData) {
-    const {
-      Id: id,
-      Code: code,
-      DisplayCode: displayCode,
-      ImageUrl: imgUrl,
-      Name: name
-    } = airlineRawData
-    return { id, code, displayCode, imgUrl, name }
-  }
 }
 
 const getStops = (stopFilters: StopOptions, itinerary: any): StopOptions => {
@@ -125,6 +108,7 @@ export const getItineraries = (data: any[]): Itinerary[] => {
         getPricingOption
       )
       const stops: number = itinerary.Filter.Stops
+      const stopsType: StopsType = getStopsType(stops)
       return {
         carriers,
         destination,
@@ -134,7 +118,8 @@ export const getItineraries = (data: any[]): Itinerary[] => {
         lowestPrice,
         origin,
         pricingOptions,
-        stops
+        stops,
+        stopsType
       }
     }
   )
@@ -173,6 +158,12 @@ const getLegData = (leg: any): Leg => {
 const getPricingOption = (option: any): PricingOption => {
   const { Agents, Price } = option
   return { agent: Agents[0].Name, price: Price }
+}
+
+const getStopsType = (stops: number): StopsType => {
+  if (stops === 0) return StopsType.direct
+  else if (stops === 1) return StopsType.singleStop
+  else return StopsType.multipleStops
 }
 
 const convertCarrierData = (carrier: CarrierRaw): Carrier => ({

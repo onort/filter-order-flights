@@ -1,4 +1,3 @@
-/* stylelint-disable declaration-block-trailing-semicolon */
 import React from "react"
 import cx from "classnames"
 

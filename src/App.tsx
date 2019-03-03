@@ -6,7 +6,12 @@ import { Dispatch } from "redux"
 import styles from "./App.module.scss"
 import { fetchData, FetchDataAction } from "./redux/actions"
 import { ApplicationState } from "./redux/reducers"
-import { FilteringOptions, Itinerary, OrderingOption } from "./types"
+import {
+  FiltersState,
+  FilteringOptions,
+  Itinerary,
+  OrderingOption
+} from "./types"
 import {
   Filters,
   Footer,
@@ -28,7 +33,9 @@ const orderingOptions = [
 
 interface State {
   activeIndex: number
+  dataToShow: Itinerary[]
   selectedOrder: OrderingOption
+  totalFlights: number
   totalPages: number
 }
 
@@ -38,6 +45,7 @@ interface PropsFromDispatch {
 
 interface PropsFromState {
   filteringOptions: FilteringOptions
+  filters: FiltersState
   itineraries: Itinerary[]
 }
 
@@ -48,8 +56,10 @@ class App extends Component<Props, State> {
 
   public state = {
     activeIndex: 1,
+    dataToShow: [],
     selectedOrder: orderingOptions[0],
-    totalPages: Math.ceil(this.props.itineraries.length / this.itemsPerPage)
+    totalFlights: 0,
+    totalPages: 1
   }
 
   public componentDidMount() {
@@ -57,10 +67,11 @@ class App extends Component<Props, State> {
   }
 
   public componentDidUpdate(prevProps: Props) {
-    if (prevProps.itineraries.length !== this.props.itineraries.length) {
-      this.setState({
-        totalPages: Math.ceil(this.props.itineraries.length / this.itemsPerPage)
-      })
+    if (
+      prevProps.itineraries.length !== this.props.itineraries.length ||
+      prevProps.filters !== this.props.filters
+    ) {
+      this.getDataToShow()
     }
   }
 
@@ -75,6 +86,23 @@ class App extends Component<Props, State> {
     this.setState({ activeIndex: page })
     // TO DECIDE: Scroll to ResultsTable instead of 0
     window.scrollTo(0, 0)
+  }
+
+  public filterData = (dataToFilter: Itinerary[]): Itinerary[] => {
+    const filteredData = dataToFilter
+      .filter(itienary =>
+        itienary.carriers.some(carrier =>
+          this.props.filters.airlines.includes(carrier.id)
+        )
+      )
+      .filter(itienary => this.props.filters.stops.includes(itienary.stopsType))
+      .filter(itienary => itienary.lowestPrice <= this.props.filters.maxPrice)
+      .filter(itienary => itienary.duration <= this.props.filters.maxDuration)
+    this.setState({
+      totalFlights: filteredData.length,
+      totalPages: Math.ceil(filteredData.length / this.itemsPerPage)
+    })
+    return filteredData
   }
 
   public orderData = (dataToOrder: Itinerary[]): Itinerary[] => {
@@ -94,11 +122,14 @@ class App extends Component<Props, State> {
 
   public getDataToShow = (): Itinerary[] => {
     const { activeIndex } = this.state
-    const dataOrdered: Itinerary[] = this.orderData(this.props.itineraries)
+    const dataOrdered: Itinerary[] = this.orderData(
+      this.filterData(this.props.itineraries)
+    )
     const dataToShow = dataOrdered.slice(
       (activeIndex - 1) * this.itemsPerPage,
       activeIndex * this.itemsPerPage
     )
+    this.setState({ dataToShow })
     return dataToShow
   }
 
@@ -108,14 +139,20 @@ class App extends Component<Props, State> {
     //   data.result.Itineraries.find(i => i.OutboundLegId.Segments.length > 1)
     // )
     // console.log("Format Data", formatData(data.result.Itineraries))
-    const { activeIndex, selectedOrder, totalPages } = this.state
-    const dataToShow = this.getDataToShow()
+    const {
+      activeIndex,
+      dataToShow,
+      selectedOrder,
+      totalFlights,
+      totalPages
+    } = this.state
+
     return (
       <div className={styles.app}>
         <Header />
         <SearchBar type="primary" />
         <OrderResults
-          flightCount={this.props.itineraries.length}
+          flightCount={totalFlights}
           onOrderSelect={this.handleOrderChange}
           orderingOptions={orderingOptions}
           selectedOrder={selectedOrder}
@@ -140,9 +177,11 @@ class App extends Component<Props, State> {
 
 const mapStateToProps = ({
   filteringOptions,
+  filters,
   itineraries
 }: ApplicationState) => ({
   filteringOptions,
+  filters,
   itineraries
 })
 

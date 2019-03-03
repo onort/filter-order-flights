@@ -16,7 +16,8 @@ import {
   toggleStopFilter
 } from "../../redux/actions"
 import { Card, CheckBox, FilterSection, Slider } from "../"
-import { FilteringOptions, FiltersState } from "../../types"
+import { FilteringOptions, FiltersState, StopsType } from "../../types"
+import { minsToString } from "../../utils"
 
 interface PropsFromState {
   filteringOptions: FilteringOptions
@@ -83,22 +84,28 @@ class Filters extends Component<Props> {
             {stops.direct > 0 && (
               <CheckBox
                 label="Sadece Aktarmasız"
-                onChange={this.handleStopChange.bind(this, "direct")}
-                checked={stopFilters.includes("direct")}
+                onChange={this.handleStopChange.bind(this, StopsType.direct)}
+                checked={stopFilters.includes(StopsType.direct)}
               />
             )}
             {stops.singleStop > 0 && (
               <CheckBox
                 label="1 Aktarma"
-                onChange={this.handleStopChange.bind(this, "singleStop")}
-                checked={stopFilters.includes("singleStop")}
+                onChange={this.handleStopChange.bind(
+                  this,
+                  StopsType.singleStop
+                )}
+                checked={stopFilters.includes(StopsType.singleStop)}
               />
             )}
             {stops.multipleStops > 0 && (
               <CheckBox
                 label="2+ Aktarma"
-                onChange={this.handleStopChange.bind(this, "multipleStops")}
-                checked={stopFilters.includes("multipleStops")}
+                onChange={this.handleStopChange.bind(
+                  this,
+                  StopsType.multipleStops
+                )}
+                checked={stopFilters.includes(StopsType.multipleStops)}
               />
             )}
           </FilterSection>
@@ -123,7 +130,10 @@ class Filters extends Component<Props> {
               checked={classes.includes("corporate")}
             />
           </FilterSection>
-          <FilterSection title="Max Fiyat">
+          <FilterSection
+            title="Max Fiyat"
+            infoText={`${maxPrice.toFixed(0)} TL`}
+          >
             <Slider
               min={priceRange.min}
               max={priceRange.max}
@@ -131,7 +141,10 @@ class Filters extends Component<Props> {
               currentValue={maxPrice}
             />
           </FilterSection>
-          <FilterSection title="Max Uçuş Süresi">
+          <FilterSection
+            title="Max Uçuş Süresi"
+            infoText={minsToString(maxDuration)}
+          >
             <Slider
               min={durationRange.min}
               max={durationRange.max}
