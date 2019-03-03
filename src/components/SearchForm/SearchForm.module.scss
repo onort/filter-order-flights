@@ -8,7 +8,7 @@
 
 .searchButton {
   min-width: px-to-rem(180px);
-  margin: map-get($spacers, small);
+  margin: map-get($spacers, x-small) map-get($spacers, small);
 }
 
 .secondary {

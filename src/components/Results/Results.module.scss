@@ -1,5 +1,9 @@
 @import "../../styles/main.scss";
 
+.container {
+  margin-bottom: map-get($spacers, large);
+}
+
 .text {
   margin: 0 0 2rem;
 }

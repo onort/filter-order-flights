@@ -71,20 +71,20 @@ class App extends Component<Props, State> {
       prevProps.itineraries.length !== this.props.itineraries.length ||
       prevProps.filters !== this.props.filters
     ) {
-      this.getDataToShow()
+      this.setState({ activeIndex: 1 }, () => this.getDataToShow())
     }
   }
 
   public handleOrderChange = (value: string) => {
     const selectedOrder = orderingOptions.find(option => option.value === value)
     if (selectedOrder && selectedOrder.value) {
-      this.setState({ selectedOrder })
+      this.setState({ selectedOrder }, () => this.getDataToShow())
     }
   }
 
   public handlePagintionClick = (page: number) => {
     this.setState({ activeIndex: page })
-    // TO DECIDE: Scroll to ResultsTable instead of 0
+    // TO DECIDE: Scroll to ResultsTable instead of 0?
     window.scrollTo(0, 0)
   }
 
@@ -135,9 +135,9 @@ class App extends Component<Props, State> {
 
   public render() {
     // console.log(data.result.Itineraries.find(d => d.Filter.Carriers.length > 1))
-    // console.log(
-    //   data.result.Itineraries.find(i => i.OutboundLegId.Segments.length > 1)
-    // )
+    console.log(
+      data.result.Itineraries.find(i => i.OutboundLegId.Segments.length === 2)
+    )
     // console.log("Format Data", formatData(data.result.Itineraries))
     const {
       activeIndex,

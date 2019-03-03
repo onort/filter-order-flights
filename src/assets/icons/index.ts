@@ -1,6 +1,7 @@
 import Arrival from "./arrival.svg"
 import ArrivalDate from "./arrival-date.svg"
 import ArrowRight from "./arrow-right.svg"
+import BigPlane from "./big-plane.svg"
 import Bus from "./bus.svg"
 import CheckList from "./checklist.svg"
 import Contact from "./contact.svg"
@@ -29,6 +30,7 @@ export {
   Arrival,
   ArrivalDate,
   ArrowRight,
+  BigPlane,
   Bus,
   CheckList,
   Contact,

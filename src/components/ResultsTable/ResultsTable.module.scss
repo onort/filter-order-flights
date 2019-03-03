@@ -57,6 +57,7 @@ $priceCellPaddingVertical: map-get($spacers, normal);
   font-family: $font-family-primary;
   font-size: map-get($heading-sizes, h5);
   font-weight: 400;
+  line-height: map-get($font-sizes, large);
 }
 
 .logo {
@@ -75,6 +76,15 @@ $priceCellPaddingVertical: map-get($spacers, normal);
   color: $grey2;
   font-family: $font-family-primary;
   font-size: map-get($heading-sizes, h5);
+  line-height: map-get($font-sizes, large);
+}
+
+.detailCell {
+  justify-content: flex-start;
+
+  .val {
+    font-size: map-get($font-sizes, small);
+  }
 }
 
 .price {

@@ -3,6 +3,7 @@
 @import "../../styles/main.scss";
 
 .container {
+  position: relative;
   padding: map-get($spacers, large) 0;
 
   &.primary {
@@ -30,4 +31,12 @@
   font-family: $font-family-heading;
   font-size: map-get($heading-sizes, h2);
   font-weight: 600;
+}
+
+.plane {
+  position: absolute;
+  top: 0;
+  left: px-to-rem(30px);
+  width: auto;
+  height: 100%;
 }

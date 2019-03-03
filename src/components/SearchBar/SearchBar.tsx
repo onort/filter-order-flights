@@ -2,6 +2,7 @@ import React from "react"
 import cx from "classnames"
 
 import styles from "./SearchBar.module.scss"
+import { BigPlane } from "../../assets/icons"
 import { Container, SearchForm } from "../"
 
 interface Props {
@@ -14,7 +15,10 @@ const SearchBar: React.SFC<Props> = props => {
     <section className={classNames}>
       <Container className={styles.searchBar}>
         {props.type === "secondary" && (
-          <h2 className={styles.title}>En uygun bileti hemen bul</h2>
+          <>
+            <img className={styles.plane} src={BigPlane} alt="Plane Icon" />
+            <h2 className={styles.title}>En uygun bileti hemen bul</h2>
+          </>
         )}
         <SearchForm type={props.type} />
       </Container>

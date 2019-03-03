@@ -1,7 +1,11 @@
+/* stylelint-disable declaration-colon-newline-after */
 @import "../../styles/main.scss";
 
 .row {
   display: grid;
+  padding:
+    map-get($spacers, small) map-get($spacers, x-large)
+    map-get($spacers, large) !important;
   background-color: $element-bg;
   grid-column-gap: map-get($spacers, normal);
   grid-template-columns: 2fr 1fr !important;
@@ -21,7 +25,7 @@
   display: grid;
   padding: 0 !important;
   border-bottom: none !important;
-  grid-template-columns: 1fr px-to-rem(170px) 1fr 2fr !important;
+  grid-template-columns: repeat(2, 2fr 3fr) !important;
 }
 
 .priceOption {
