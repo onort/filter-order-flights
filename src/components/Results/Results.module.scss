@@ -4,6 +4,12 @@
   margin-bottom: map-get($spacers, large);
 }
 
+.tableWrapper {
+  @include forSmallScreen {
+    box-shadow: none;
+  }
+}
+
 .text {
   margin: 0 0 2rem;
 }

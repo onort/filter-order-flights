@@ -2,4 +2,8 @@
 
 .container {
   width: 100%;
+
+  @include forNonDesktop {
+    display: none;
+  }
 }

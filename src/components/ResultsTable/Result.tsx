@@ -3,6 +3,7 @@ import cx from "classnames"
 import dayjs from "dayjs"
 
 import styles from "./ResultsTable.module.scss"
+import { Plane } from "../../assets/icons"
 import { Itinerary } from "../../types"
 import { Button, ResultDetails } from "../"
 import { Cell, DataCell, Row } from "./"
@@ -61,14 +62,18 @@ class Result extends Component<Props, State> {
             )}
           </Cell>
           <DataCell
+            className={styles.origin}
             sub={origin.airportCode}
             val={dayjs(origin.time).format("HH:mm")}
-          />
+          >
+            <img className={styles.plane} src={Plane} alt="Plane Icon" />
+          </DataCell>
           <DataCell
             sub={destination.airportCode}
             val={dayjs(destination.time).format("HH:mm")}
           />
           <DataCell
+            className={styles.stopsCell}
             sub={minsToString(duration)}
             val={stops === 0 ? "Direkt" : `${stops} Aktarma`}
           />

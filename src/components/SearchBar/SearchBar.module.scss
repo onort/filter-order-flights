@@ -8,6 +8,10 @@
 
   &.primary {
     background-color: $primary;
+
+    @include forSmallScreen {
+      display: none;
+    }
   }
 
   &.secondary {
@@ -20,9 +24,22 @@
 }
 
 .searchBar {
-  width: 1120px;
-  max-width: 100%;
   margin: 0 auto;
+}
+
+.form {
+  @include forSmallScreen {
+    display: none !important;
+  }
+}
+
+.secondaryButton {
+  display: none;
+
+  @include forSmallScreen {
+    display: block;
+    width: 100%;
+  }
 }
 
 .title {
@@ -39,4 +56,8 @@
   left: px-to-rem(30px);
   width: auto;
   height: 100%;
+
+  @include forSmallScreen {
+    display: none;
+  }
 }

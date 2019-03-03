@@ -15,7 +15,7 @@ const Pagination: React.SFC<Props> = props => {
   const pagesArray = Array.from(Array(totalPages).keys(), i => i + 1)
 
   return (
-    <section>
+    <section className={styles.paginationWrapper}>
       <Container className={styles.paginationContainer}>
         {pagesArray.map(pageNumber => (
           <button

@@ -13,6 +13,7 @@ import {
   OrderingOption
 } from "./types"
 import {
+  Container,
   Filters,
   Footer,
   Header,
@@ -135,9 +136,9 @@ class App extends Component<Props, State> {
 
   public render() {
     // console.log(data.result.Itineraries.find(d => d.Filter.Carriers.length > 1))
-    console.log(
-      data.result.Itineraries.find(i => i.OutboundLegId.Segments.length === 2)
-    )
+    // console.log(
+    //   data.result.Itineraries.find(i => i.OutboundLegId.Segments.length === 2)
+    // )
     // console.log("Format Data", formatData(data.result.Itineraries))
     const {
       activeIndex,
@@ -158,7 +159,7 @@ class App extends Component<Props, State> {
           selectedOrder={selectedOrder}
         />
         {this.props.itineraries.length > 0 && (
-          <div className={styles.main}>
+          <Container className={styles.main}>
             <Filters />
             <Results data={dataToShow} />
             <Pagination
@@ -166,7 +167,7 @@ class App extends Component<Props, State> {
               totalPages={totalPages}
               onClick={this.handlePagintionClick}
             />
-          </div>
+          </Container>
         )}
         <SearchBar type="secondary" />
         <Footer />

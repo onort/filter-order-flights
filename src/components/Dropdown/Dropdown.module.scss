@@ -3,6 +3,10 @@
 .container {
   display: flex;
   align-items: center;
+
+  @include forSmallScreen {
+    width: 100%;
+  }
 }
 
 .title {
@@ -12,6 +16,10 @@
   font-family: $font-family-heading;
   font-size: map-get($heading-sizes, h4);
   font-weight: 600;
+
+  @include forSmallScreen {
+    display: none;
+  }
 }
 
 .selected {
@@ -45,6 +53,11 @@
   font-family: $font-family-heading;
   font-size: map-get($heading-sizes, h4);
   font-weight: 600;
+
+  @include forSmallScreen {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .dropdownList {
@@ -58,6 +71,10 @@
   background-color: $white;
   border-radius: px-to-rem(2px);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  @include forSmallScreen {
+    width: 100%;
+  }
 }
 
 .dropdownItem {

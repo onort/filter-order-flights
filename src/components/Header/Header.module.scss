@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-colon-newline-after */
 @import "../../styles/main.scss";
 
 .header {
@@ -5,12 +6,18 @@
 }
 
 .container {
+  position: relative;
   display: flex;
-  max-width: px-to-rem(1120px);
   align-items: center;
   justify-content: space-between;
-  padding: map-get($spacers, large) 0 map-get($spacers, normal);
+  padding:
+    map-get($spacers, large) map-get($spacers, normal)
+    map-get($spacers, normal);
   margin: 0 auto;
+
+  @include forNonDesktop {
+    padding: map-get($spacers, large);
+  }
 }
 
 .logoContainer {
@@ -22,6 +29,43 @@
   max-width: 100%;
 }
 
+.burger {
+  display: none;
+
+  @include forNonDesktop {
+    display: block;
+    cursor: pointer;
+  }
+}
+
 .navigation {
   display: flex;
+  background-color: $white;
+
+  @include forNonDesktop {
+    position: absolute;
+    z-index: 9;
+    top: 90px;
+    right: 0;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding: map-get($spacers, small) 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    &.menuOpen {
+      display: flex;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      padding: map-get($spacers, small) 0 !important;
+      margin-left: 0 !important;
+
+      &:hover {
+        background-color: $element-bg;
+      }
+    }
+  }
 }

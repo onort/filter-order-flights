@@ -6,13 +6,24 @@ $priceCellPaddingVertical: map-get($spacers, normal);
 
 .container {
   display: grid;
+
+  @include forSmallScreen {
+    background-color: $body-bg;
+  }
 }
 
 .row {
   display: grid;
   padding: map-get($spacers, small) map-get($spacers, normal);
   border-bottom: 1px solid $muted-border;
+  background-color: $white;
   grid-template-columns: repeat(4, 1fr) 2fr;
+
+  @include forSmallScreen {
+    margin-bottom: map-get($spacers, x-large);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.233752);
+    grid-template-columns: 1fr 1fr;
+  }
 
   &.header {
     display: grid;
@@ -23,11 +34,19 @@ $priceCellPaddingVertical: map-get($spacers, normal);
     font-size: map-get($heading-sizes, h5);
     font-weight: 600;
     grid-template-columns: repeat(6, 1fr);
+
+    @include forSmallScreen {
+      display: none;
+    }
   }
 
   &.active {
     border-bottom: none;
     background-color: $element-bg;
+
+    @include forSmallScreen {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -38,6 +57,14 @@ $priceCellPaddingVertical: map-get($spacers, normal);
     padding:
       calc(#{map-get($spacers, large)} - #{$priceCellPaddingHorizontal})
       calc(#{map-get($spacers, normal)} - #{$priceCellPaddingHorizontal});
+
+    @include forSmallScreen {
+      margin:
+        0 calc(-1 * #{map-get($spacers, normal)})
+        calc(-1 * #{map-get($spacers, small)});
+      background-color: $element-bg;
+      grid-column: 1 / 3;
+    }
   }
 }
 
@@ -63,6 +90,11 @@ $priceCellPaddingVertical: map-get($spacers, normal);
 .logo {
   max-width: 100%;
   height: auto;
+
+  @include forSmallScreen {
+    width: px-to-rem(120px);
+    max-width: 100%;
+  }
 }
 
 .val {
@@ -87,12 +119,28 @@ $priceCellPaddingVertical: map-get($spacers, normal);
   }
 }
 
+.origin {
+  position: relative;
+}
+
+.plane {
+  position: absolute;
+  z-index: 2;
+  top: 32px;
+  right: 11px;
+}
+
 .price {
   display: flex;
   justify-content: space-between;
   padding: $priceCellPaddingVertical $priceCellPaddingHorizontal;
   background-color: $element-bg;
   border-radius: px-to-rem(2px);
+
+  @include forSmallScreen {
+    padding-right: map-get($spacers, x-large);
+    padding-left: map-get($spacers, x-large);
+  }
 }
 
 .viewButton {
@@ -105,4 +153,11 @@ $priceCellPaddingVertical: map-get($spacers, normal);
   font-family: $font-family-primary;
   font-size: map-get($heading-sizes, h3);
   font-weight: 400;
+}
+
+.stopsCell {
+  @include forSmallScreen {
+    grid-column: 2 / 3;
+    grid-row-start: 1;
+  }
 }

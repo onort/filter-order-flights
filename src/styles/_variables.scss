@@ -69,3 +69,25 @@ $spacers: (
   small: px-to-rem($spacer * 0.75),
   x-small: px-to-rem($spacer * 0.5)
 );
+
+$maxWidth: 1152px;
+$midScreenBreakPoint: 1000px;
+$smallScreenBreakPoint: 750px;
+
+@mixin forMidScreen {
+  @media screen and (min-width: $smallScreenBreakPoint) and (max-width: $midScreenBreakPoint) {
+    @content;
+  }
+}
+
+@mixin forSmallScreen {
+  @media screen and (max-width: calc(#{$smallScreenBreakPoint} - 1px)) {
+    @content;
+  }
+}
+
+@mixin forNonDesktop {
+  @media screen and (max-width: $midScreenBreakPoint) {
+    @content;
+  }
+}

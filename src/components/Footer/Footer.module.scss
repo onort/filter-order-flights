@@ -3,13 +3,17 @@
 
 .footerContainer {
   display: grid;
-  width: 1120px;
-  padding: map-get($spacers, x-large) 0;
+  padding: map-get($spacers, x-large) map-get($spacers, normal);
   margin:
     map-get($spacers, x-large) auto
     calc(3 * #{map-get($spacers, x-large)});
   grid-column-gap: px-to-rem(50px);
   grid-template-columns: 1fr 2fr;
+
+  @include forNonDesktop {
+    display: block;
+    margin: map-get($spacers, normal) 0;
+  }
 }
 
 .textContent {
@@ -26,4 +30,8 @@
   flex: 5;
   padding-top: map-get($spacers, x-small);
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+  @include forNonDesktop {
+    display: none;
+  }
 }

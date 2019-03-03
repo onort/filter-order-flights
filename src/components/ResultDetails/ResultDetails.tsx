@@ -18,6 +18,7 @@ const ResultDetails: React.SFC<Props> = props => {
         {props.legs.map(leg => (
           <Row key={leg.flightCode} className={styles.legRow}>
             <DataCell
+              className={styles.origin}
               detailCell={true}
               sub={`${leg.departure.airportCode} ${leg.departure.airportName}`}
               val={dayjs(leg.departure.time).format("HH:mm")}
@@ -29,11 +30,13 @@ const ResultDetails: React.SFC<Props> = props => {
               <div className={styles.pointedLine} />
             </Cell>
             <DataCell
+              className={styles.destination}
               detailCell={true}
-              sub={`${leg.arrival.airportCode} ${leg.arrival.airportName}`}
+              sub={`${leg.arrival.airportName} ${leg.arrival.airportCode} `}
               val={dayjs(leg.arrival.time).format("HH:mm")}
             />
             <DataCell
+              className={styles.flightInfo}
               detailCell={true}
               sub={`${leg.flightCode} Ekonomi`}
               val={leg.carrier}

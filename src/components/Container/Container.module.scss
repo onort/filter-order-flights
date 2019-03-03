@@ -1,4 +1,7 @@
+@import "../../styles/main.scss";
+
 .container {
-  // TODO: create grid with breakpoints
   width: 100%;
+  max-width: $maxWidth;
+  padding: 0 map-get($spacers, normal);
 }

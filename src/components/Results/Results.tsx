@@ -13,7 +13,7 @@ class Results extends Component<Props> {
   public render() {
     return (
       <main className={styles.container}>
-        <Card>
+        <Card className={styles.tableWrapper}>
           <ResultsTable data={this.props.data} />
         </Card>
       </main>

@@ -3,7 +3,7 @@ import cx from "classnames"
 
 import styles from "./SearchBar.module.scss"
 import { BigPlane } from "../../assets/icons"
-import { Container, SearchForm } from "../"
+import { Button, Container, SearchForm } from "../"
 
 interface Props {
   type: "primary" | "secondary"
@@ -18,9 +18,14 @@ const SearchBar: React.SFC<Props> = props => {
           <>
             <img className={styles.plane} src={BigPlane} alt="Plane Icon" />
             <h2 className={styles.title}>En uygun bileti hemen bul</h2>
+            <Button
+              text="Bilet Ara"
+              secondary={true}
+              className={styles.secondaryButton}
+            />
           </>
         )}
-        <SearchForm type={props.type} />
+        <SearchForm className={styles.form} type={props.type} />
       </Container>
     </section>
   )

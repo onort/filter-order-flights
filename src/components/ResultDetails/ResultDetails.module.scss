@@ -6,9 +6,14 @@
   padding:
     map-get($spacers, small) map-get($spacers, x-large)
     map-get($spacers, large) !important;
-  background-color: $element-bg;
+  background-color: $element-bg !important;
   grid-column-gap: map-get($spacers, normal);
   grid-template-columns: 2fr 1fr !important;
+
+  @include forSmallScreen {
+    display: flex !important;
+    flex-direction: column;
+  }
 }
 
 .legs,
@@ -19,6 +24,16 @@
 
 .legs {
   padding: 0 !important;
+
+  @include forSmallScreen {
+    margin-bottom: map-get($spacers, large);
+  }
+}
+
+.prices {
+  @include forSmallScreen {
+    padding: map-get($spacers, normal) !important;
+  }
 }
 
 .legRow {
@@ -26,6 +41,43 @@
   padding: 0 !important;
   border-bottom: none !important;
   grid-template-columns: repeat(2, 2fr 3fr) !important;
+
+  .durationContainer {
+    text-align: center;
+  }
+
+  @include forSmallScreen {
+    padding: map-get($spacers, normal) !important;
+    margin-bottom: 0 !important;
+    box-shadow: none !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr !important;
+
+    .flightInfo {
+      padding-bottom: 0;
+      grid-column: 1 / span 2;
+      grid-row: 1;
+    }
+
+    .durationContainer {
+      padding-top: map-get($spacers, x-small);
+      padding-bottom: 0;
+      grid-column: 1 / span 2;
+      grid-row: 2;
+    }
+
+    .origin {
+      padding-bottom: 0;
+      grid-column: 1 / 2;
+      grid-row: 3;
+    }
+
+    .destination {
+      padding-bottom: 0;
+      grid-column: 2/ 3;
+      grid-row: 3;
+    }
+  }
 }
 
 .priceOption {
@@ -50,10 +102,6 @@
   }
 }
 
-.durationContainer {
-  text-align: center;
-}
-
 .duration {
   color: $grey2;
   font-family: $font-family-primary;
@@ -64,7 +112,7 @@
 .pointedLine {
   position: relative;
   padding-bottom: 15px;
-  border-bottom: 1px solid $grey2;
+  border-bottom: 1px solid $grey3;
 }
 
 .pointedLine::after,
@@ -74,7 +122,7 @@
   left: 0;
   width: 5px;
   height: 5px;
-  background: $grey2;
+  background: $grey3;
   border-radius: 50%;
   content: "";
 }

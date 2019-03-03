@@ -2,7 +2,7 @@ import React from "react"
 
 import styles from "./OrderResults.module.scss"
 import { OrderingOption } from "../../types"
-import { Dropdown } from "../"
+import { Button, Container, Dropdown } from "../"
 
 interface Props {
   className?: string
@@ -15,7 +15,7 @@ interface Props {
 const OrderResults: React.SFC<Props> = props => {
   const { flightCount, onOrderSelect, orderingOptions, selectedOrder } = props
   return (
-    <section className={styles.container}>
+    <Container className={styles.container}>
       {flightCount > 0 ? (
         <span className={styles.flightCount}>
           {flightCount} Uçuş Listeleniyor
@@ -25,13 +25,17 @@ const OrderResults: React.SFC<Props> = props => {
           Kriterlere Uygun Uçuş Bulunamadı
         </span>
       )}
+      <div className={styles.buttonsContainer}>
+        <Button text="Yeniden Ara" primary={true} className={styles.button} />
+        <Button text="Filtrele" primary={true} className={styles.button} />
+      </div>
       <Dropdown
         title="Sıralama"
         selectedOrder={selectedOrder}
         orderingOtions={orderingOptions}
         onSelect={onOrderSelect}
       />
-    </section>
+    </Container>
   )
 }
 

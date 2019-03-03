@@ -8,6 +8,7 @@ interface Props {
   active?: boolean
   icon?: string
   title: string
+  uri: string
 }
 
 const NavItem: React.SFC<Props> = props => {
@@ -17,7 +18,7 @@ const NavItem: React.SFC<Props> = props => {
     props.className
   )
   return (
-    <a className={classNames}>
+    <a className={classNames} href={props.uri}>
       <img className={styles.icon} src={props.icon} alt={props.title} />
       <span className={styles.title}>{props.title}</span>
     </a>

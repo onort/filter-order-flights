@@ -22,6 +22,7 @@ const DataCell: React.SFC<Props> = props => {
     <Cell className={classNames}>
       <span className={styles.val}>{val}</span>
       <span className={styles.sub}>{sub}</span>
+      {props.children}
     </Cell>
   )
 }
