@@ -10,7 +10,7 @@ import {
 } from "../actions"
 import { FiltersState } from "../../types"
 
-const initialState: FiltersState = {
+export const initialState: FiltersState = {
   airlines: [],
   classes: ["economy", "business", "corporate"],
   maxDuration: 0,

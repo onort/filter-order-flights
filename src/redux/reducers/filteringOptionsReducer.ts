@@ -3,7 +3,7 @@ import { Reducer } from "redux"
 import { DataActionTypes, FetchDataAction } from "../actions"
 import { FilteringOptions } from "../../types"
 
-const initialState = {
+export const initialState = {
   airlineCodes: [],
   airlines: [],
   durationRange: { max: 0, min: 0 },
