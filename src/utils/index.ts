@@ -182,7 +182,7 @@ export const formatData = (data: any[]): FormattedData => {
 export const minsToString = (mins: number) => {
   const hours = Math.floor(mins / 60).toFixed(0)
   const minutes = mins % 60
-  return `${mins / 60 > 1 ? hours + " saat " : ""}${
+  return `${mins / 60 >= 1 ? hours + " saat " : ""}${
     minutes > 0 ? minutes + " dakika" : ""
   }`
 }

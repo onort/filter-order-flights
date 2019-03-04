@@ -20,7 +20,7 @@ const ResultDetails: React.SFC<Props> = props => {
             <DataCell
               className={styles.origin}
               detailCell={true}
-              sub={`${leg.departure.airportCode} ${leg.departure.airportName}`}
+              sub={`${leg.departure.airportName} ${leg.departure.airportCode}`}
               val={dayjs(leg.departure.time).format("HH:mm")}
             />
             <Cell className={styles.durationContainer}>
