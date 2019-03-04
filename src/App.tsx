@@ -1,4 +1,3 @@
-/* tslint:disable no-console */
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Dispatch } from "redux"
@@ -12,6 +11,7 @@ import {
   Itinerary,
   OrderingOption
 } from "./types"
+import { orderByDate, orderByPrice } from "./utils"
 import {
   Container,
   Filters,
@@ -22,8 +22,6 @@ import {
   SearchBar,
   Pagination
 } from "./components"
-import data from "./data/mockData.json"
-import { formatData, orderByDate, orderByPrice } from "./utils"
 
 export const orderingOptions = [
   { text: "Ucuzdan Pahalıya", value: "minPrice" },
@@ -79,13 +77,14 @@ class App extends Component<Props, State> {
   public handleOrderChange = (value: string) => {
     const selectedOrder = orderingOptions.find(option => option.value === value)
     if (selectedOrder && selectedOrder.value) {
-      this.setState({ selectedOrder }, () => this.getDataToShow())
+      this.setState({ selectedOrder, activeIndex: 1 }, () =>
+        this.getDataToShow()
+      )
     }
   }
 
   public handlePagintionClick = (page: number) => {
-    this.setState({ activeIndex: page })
-    // TO DECIDE: Scroll to ResultsTable instead of 0?
+    this.setState({ activeIndex: page }, () => this.getDataToShow())
     window.scrollTo(0, 0)
   }
 
@@ -135,12 +134,6 @@ class App extends Component<Props, State> {
   }
 
   public render() {
-    // console.log(data.result.Itineraries.find(d => d.Filter.Carriers.length > 1))
-    // console.log(data.result.Itineraries[0])
-    // console.log(
-    //   data.result.Itineraries.find(i => i.OutboundLegId.Segments.length === 2)
-    // )
-    // console.log("Format Data", formatData(data.result.Itineraries))
     const {
       activeIndex,
       dataToShow,

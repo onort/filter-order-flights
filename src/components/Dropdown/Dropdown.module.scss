@@ -45,7 +45,8 @@
   position: relative;
   display: block;
   width: px-to-rem(230px);
-  padding: map-get($spacers, small) map-get($spacers, normal);
+  padding: map-get($spacers, x-small) map-get($spacers, normal);
+  border: 1px solid $grey4;
   margin-left: 1rem;
   background-color: $white;
   color: $grey3;

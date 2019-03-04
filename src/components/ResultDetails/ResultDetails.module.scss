@@ -3,9 +3,7 @@
 
 .row {
   display: grid;
-  padding:
-    map-get($spacers, small) map-get($spacers, x-large)
-    map-get($spacers, large) !important;
+  padding: map-get($spacers, large) map-get($spacers, x-large) !important;
   background-color: $element-bg !important;
   grid-column-gap: map-get($spacers, normal);
   grid-template-columns: 2fr 1fr !important;

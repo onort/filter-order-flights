@@ -6,6 +6,7 @@ $priceCellPaddingVertical: map-get($spacers, normal);
 
 .container {
   display: grid;
+  background-color: $element-bg;
 
   @include forSmallScreen {
     background-color: $body-bg;
@@ -126,7 +127,7 @@ $priceCellPaddingVertical: map-get($spacers, normal);
 .plane {
   position: absolute;
   z-index: 2;
-  top: 32px;
+  top: 40px;
   right: 11px;
 }
 
@@ -159,5 +160,14 @@ $priceCellPaddingVertical: map-get($spacers, normal);
   @include forSmallScreen {
     grid-column: 2 / 3;
     grid-row-start: 1;
+  }
+}
+
+.divider {
+  border-top: 1px solid $muted-border;
+  margin: 0 map-get($spacers, x-large);
+
+  @include forSmallScreen {
+    display: none;
   }
 }

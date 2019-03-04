@@ -1,5 +1,4 @@
 /* tslint:disable prefer-template */
-import mockData from "../data/mockData.json"
 import {
   Carrier,
   CarrierRaw,

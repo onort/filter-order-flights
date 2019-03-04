@@ -98,7 +98,10 @@ class Result extends Component<Props, State> {
           </Cell>
         </Row>
         {this.state.showDetails && (
-          <ResultDetails legs={legs} pricingOptions={pricingOptions} />
+          <>
+            <div className={styles.divider} />
+            <ResultDetails legs={legs} pricingOptions={pricingOptions} />
+          </>
         )}
       </>
     )
