@@ -50,6 +50,7 @@ ShallowWrapper {
             >
               Test
             </span>,
+            undefined,
             false,
           ],
           "className": "header",
@@ -68,6 +69,7 @@ ShallowWrapper {
             "rendered": "Test",
             "type": "span",
           },
+          undefined,
           false,
         ],
         "type": "div",
@@ -122,6 +124,7 @@ ShallowWrapper {
               >
                 Test
               </span>,
+              undefined,
               false,
             ],
             "className": "header",
@@ -140,6 +143,7 @@ ShallowWrapper {
               "rendered": "Test",
               "type": "span",
             },
+            undefined,
             false,
           ],
           "type": "div",

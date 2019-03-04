@@ -10,7 +10,6 @@ interface Props {
   size?: "small" | "normal"
 }
 
-// TODO: Unit Tests
 const FormField: React.SFC<Props> = props => {
   const classNames = cx(
     styles.container,

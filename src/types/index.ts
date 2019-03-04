@@ -88,3 +88,9 @@ export enum StopsType {
   singleStop = "singleStop",
   multipleStops = "multipleStops"
 }
+
+export enum CabinType {
+  economy = "economy",
+  business = "business",
+  corporate = "corporate"
+}

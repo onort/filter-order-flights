@@ -9,7 +9,7 @@ import {
   DepartureDate,
   Person
 } from "../../assets/icons"
-import { Button, FormField } from ".."
+import { Button, FormField } from "../"
 
 interface Props {
   className?: string

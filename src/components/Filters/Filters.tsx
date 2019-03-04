@@ -1,4 +1,3 @@
-/* tslint:disable no-console */
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Dispatch } from "redux"
@@ -16,7 +15,12 @@ import {
   toggleStopFilter
 } from "../../redux/actions"
 import { Card, CheckBox, FilterSection, Slider } from "../"
-import { FilteringOptions, FiltersState, StopsType } from "../../types"
+import {
+  CabinType,
+  FilteringOptions,
+  FiltersState,
+  StopsType
+} from "../../types"
 import { minsToString } from "../../utils"
 
 interface PropsFromState {
@@ -37,7 +41,7 @@ interface PropsFromDispatch {
 
 type Props = PropsFromState & PropsFromDispatch
 
-class Filters extends Component<Props> {
+export class Filters extends Component<Props> {
   public handleAirlineChange = (val: number) => this.props.toggleAirline(val)
 
   public handleClassChange = (val: string) => this.props.toggleClass(val)
@@ -66,6 +70,7 @@ class Filters extends Component<Props> {
       priceRange,
       stops
     } = this.props.filteringOptions
+
     const {
       airlines: airlineFilters,
       classes,
@@ -73,6 +78,7 @@ class Filters extends Component<Props> {
       maxPrice,
       stops: stopFilters
     } = this.props.filters
+
     return (
       <aside className={styles.container}>
         <Card>
@@ -116,18 +122,18 @@ class Filters extends Component<Props> {
           >
             <CheckBox
               label="Ekonomi"
-              onChange={this.handleClassChange.bind(this, "economy")}
-              checked={classes.includes("economy")}
+              onChange={this.handleClassChange.bind(this, CabinType.economy)}
+              checked={classes.includes(CabinType.economy)}
             />
             <CheckBox
               label="Business"
-              onChange={this.handleClassChange.bind(this, "business")}
-              checked={classes.includes("business")}
+              onChange={this.handleClassChange.bind(this, CabinType.business)}
+              checked={classes.includes(CabinType.business)}
             />
             <CheckBox
               label="Kurumsal"
-              onChange={this.handleClassChange.bind(this, "corporate")}
-              checked={classes.includes("corporate")}
+              onChange={this.handleClassChange.bind(this, CabinType.corporate)}
+              checked={classes.includes(CabinType.corporate)}
             />
           </FilterSection>
           <FilterSection

@@ -30,25 +30,36 @@ ShallowWrapper {
             src="thy.png"
           />
         </a>
+        <img
+          alt="Menu Icon"
+          className="burger"
+          onClick={[Function]}
+          src="menu.svg"
+        />
         <nav
           className="navigation"
+          onClick={[Function]}
         >
           <NavItem
             active={true}
             icon="home.svg"
             title="Ana Sayfa"
+            uri="#"
           />
           <NavItem
             icon="sale.svg"
             title="Süper Fırsatlar"
+            uri="#"
           />
           <NavItem
             icon="help.svg"
             title="Yardım"
+            uri="#"
           />
           <NavItem
             icon="contact.svg"
             title="İletişim"
+            uri="#"
           />
         </nav>
       </Container>,
@@ -70,25 +81,36 @@ ShallowWrapper {
               src="thy.png"
             />
           </a>,
+          <img
+            alt="Menu Icon"
+            className="burger"
+            onClick={[Function]}
+            src="menu.svg"
+          />,
           <nav
             className="navigation"
+            onClick={[Function]}
           >
             <NavItem
               active={true}
               icon="home.svg"
               title="Ana Sayfa"
+              uri="#"
             />
             <NavItem
               icon="sale.svg"
               title="Süper Fırsatlar"
+              uri="#"
             />
             <NavItem
               icon="help.svg"
               title="Yardım"
+              uri="#"
             />
             <NavItem
               icon="contact.svg"
               title="İletişim"
+              uri="#"
             />
           </nav>,
         ],
@@ -129,26 +151,45 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "alt": "Menu Icon",
+            "className": "burger",
+            "onClick": [Function],
+            "src": "menu.svg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
               <NavItem
                 active={true}
                 icon="home.svg"
                 title="Ana Sayfa"
+                uri="#"
               />,
               <NavItem
                 icon="sale.svg"
                 title="Süper Fırsatlar"
+                uri="#"
               />,
               <NavItem
                 icon="help.svg"
                 title="Yardım"
+                uri="#"
               />,
               <NavItem
                 icon="contact.svg"
                 title="İletişim"
+                uri="#"
               />,
             ],
             "className": "navigation",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": Array [
@@ -160,6 +201,7 @@ ShallowWrapper {
                 "active": true,
                 "icon": "home.svg",
                 "title": "Ana Sayfa",
+                "uri": "#",
               },
               "ref": null,
               "rendered": null,
@@ -172,6 +214,7 @@ ShallowWrapper {
               "props": Object {
                 "icon": "sale.svg",
                 "title": "Süper Fırsatlar",
+                "uri": "#",
               },
               "ref": null,
               "rendered": null,
@@ -184,6 +227,7 @@ ShallowWrapper {
               "props": Object {
                 "icon": "help.svg",
                 "title": "Yardım",
+                "uri": "#",
               },
               "ref": null,
               "rendered": null,
@@ -196,6 +240,7 @@ ShallowWrapper {
               "props": Object {
                 "icon": "contact.svg",
                 "title": "İletişim",
+                "uri": "#",
               },
               "ref": null,
               "rendered": null,
@@ -227,25 +272,36 @@ ShallowWrapper {
               src="thy.png"
             />
           </a>
+          <img
+            alt="Menu Icon"
+            className="burger"
+            onClick={[Function]}
+            src="menu.svg"
+          />
           <nav
             className="navigation"
+            onClick={[Function]}
           >
             <NavItem
               active={true}
               icon="home.svg"
               title="Ana Sayfa"
+              uri="#"
             />
             <NavItem
               icon="sale.svg"
               title="Süper Fırsatlar"
+              uri="#"
             />
             <NavItem
               icon="help.svg"
               title="Yardım"
+              uri="#"
             />
             <NavItem
               icon="contact.svg"
               title="İletişim"
+              uri="#"
             />
           </nav>
         </Container>,
@@ -267,25 +323,36 @@ ShallowWrapper {
                 src="thy.png"
               />
             </a>,
+            <img
+              alt="Menu Icon"
+              className="burger"
+              onClick={[Function]}
+              src="menu.svg"
+            />,
             <nav
               className="navigation"
+              onClick={[Function]}
             >
               <NavItem
                 active={true}
                 icon="home.svg"
                 title="Ana Sayfa"
+                uri="#"
               />
               <NavItem
                 icon="sale.svg"
                 title="Süper Fırsatlar"
+                uri="#"
               />
               <NavItem
                 icon="help.svg"
                 title="Yardım"
+                uri="#"
               />
               <NavItem
                 icon="contact.svg"
                 title="İletişim"
+                uri="#"
               />
             </nav>,
           ],
@@ -326,26 +393,45 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "alt": "Menu Icon",
+              "className": "burger",
+              "onClick": [Function],
+              "src": "menu.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "children": Array [
                 <NavItem
                   active={true}
                   icon="home.svg"
                   title="Ana Sayfa"
+                  uri="#"
                 />,
                 <NavItem
                   icon="sale.svg"
                   title="Süper Fırsatlar"
+                  uri="#"
                 />,
                 <NavItem
                   icon="help.svg"
                   title="Yardım"
+                  uri="#"
                 />,
                 <NavItem
                   icon="contact.svg"
                   title="İletişim"
+                  uri="#"
                 />,
               ],
               "className": "navigation",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": Array [
@@ -357,6 +443,7 @@ ShallowWrapper {
                   "active": true,
                   "icon": "home.svg",
                   "title": "Ana Sayfa",
+                  "uri": "#",
                 },
                 "ref": null,
                 "rendered": null,
@@ -369,6 +456,7 @@ ShallowWrapper {
                 "props": Object {
                   "icon": "sale.svg",
                   "title": "Süper Fırsatlar",
+                  "uri": "#",
                 },
                 "ref": null,
                 "rendered": null,
@@ -381,6 +469,7 @@ ShallowWrapper {
                 "props": Object {
                   "icon": "help.svg",
                   "title": "Yardım",
+                  "uri": "#",
                 },
                 "ref": null,
                 "rendered": null,
@@ -393,6 +482,7 @@ ShallowWrapper {
                 "props": Object {
                   "icon": "contact.svg",
                   "title": "İletişim",
+                  "uri": "#",
                 },
                 "ref": null,
                 "rendered": null,
@@ -428,7 +518,8 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;
 
-exports[`<Header /> should match snapshot 2`] = `"<header class=\\"header\\"><div class=\\"container container\\"><a class=\\"logoContainer\\"><img class=\\"logo\\" src=\\"thy.png\\" alt=\\"Logo\\"/></a><nav class=\\"navigation\\"><a class=\\"item active\\"><img class=\\"icon\\" src=\\"home.svg\\" alt=\\"Ana Sayfa\\"/><span class=\\"title\\">Ana Sayfa</span></a><a class=\\"item\\"><img class=\\"icon\\" src=\\"sale.svg\\" alt=\\"Süper Fırsatlar\\"/><span class=\\"title\\">Süper Fırsatlar</span></a><a class=\\"item\\"><img class=\\"icon\\" src=\\"help.svg\\" alt=\\"Yardım\\"/><span class=\\"title\\">Yardım</span></a><a class=\\"item\\"><img class=\\"icon\\" src=\\"contact.svg\\" alt=\\"İletişim\\"/><span class=\\"title\\">İletişim</span></a></nav></div></header>"`;
+exports[`<Header /> should match snapshot 2`] = `"<header class=\\"header\\"><div class=\\"container container\\"><a class=\\"logoContainer\\"><img class=\\"logo\\" src=\\"thy.png\\" alt=\\"Logo\\"/></a><img class=\\"burger\\" src=\\"menu.svg\\" alt=\\"Menu Icon\\"/><nav class=\\"navigation\\"><a class=\\"item active\\" href=\\"#\\"><img class=\\"icon\\" src=\\"home.svg\\" alt=\\"Ana Sayfa\\"/><span class=\\"title\\">Ana Sayfa</span></a><a class=\\"item\\" href=\\"#\\"><img class=\\"icon\\" src=\\"sale.svg\\" alt=\\"Süper Fırsatlar\\"/><span class=\\"title\\">Süper Fırsatlar</span></a><a class=\\"item\\" href=\\"#\\"><img class=\\"icon\\" src=\\"help.svg\\" alt=\\"Yardım\\"/><span class=\\"title\\">Yardım</span></a><a class=\\"item\\" href=\\"#\\"><img class=\\"icon\\" src=\\"contact.svg\\" alt=\\"İletişim\\"/><span class=\\"title\\">İletişim</span></a></nav></div></header>"`;

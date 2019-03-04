@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<NavItem /> should match snapshot 1`] = `
+exports[`<DataCell /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <NavItem
-    icon="home.svg"
-    title="Home"
+  Symbol(enzyme.__unrendered__): <DataCell
+    detailCell={false}
+    sub="Sub"
+    val="Val"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -19,22 +20,22 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
-        <img
-          alt="Home"
-          className="icon"
-          src="home.svg"
-        />,
         <span
-          className="title"
+          className="val"
         >
-          Home
+          Val
         </span>,
+        <span
+          className="sub"
+        >
+          Sub
+        </span>,
+        undefined,
       ],
-      "className": "item",
-      "href": undefined,
+      "className": "dataCell",
     },
     "ref": null,
     "rendered": Array [
@@ -43,49 +44,49 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "Home",
-          "className": "icon",
-          "src": "home.svg",
+          "children": "Val",
+          "className": "val",
         },
         "ref": null,
-        "rendered": null,
-        "type": "img",
+        "rendered": "Val",
+        "type": "span",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Home",
-          "className": "title",
+          "children": "Sub",
+          "className": "sub",
         },
         "ref": null,
-        "rendered": "Home",
+        "rendered": "Sub",
         "type": "span",
       },
+      undefined,
     ],
-    "type": "a",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
-          <img
-            alt="Home"
-            className="icon"
-            src="home.svg"
-          />,
           <span
-            className="title"
+            className="val"
           >
-            Home
+            Val
           </span>,
+          <span
+            className="sub"
+          >
+            Sub
+          </span>,
+          undefined,
         ],
-        "className": "item",
-        "href": undefined,
+        "className": "dataCell",
       },
       "ref": null,
       "rendered": Array [
@@ -94,28 +95,28 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "Home",
-            "className": "icon",
-            "src": "home.svg",
+            "children": "Val",
+            "className": "val",
           },
           "ref": null,
-          "rendered": null,
-          "type": "img",
+          "rendered": "Val",
+          "type": "span",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Home",
-            "className": "title",
+            "children": "Sub",
+            "className": "sub",
           },
           "ref": null,
-          "rendered": "Home",
+          "rendered": "Sub",
           "type": "span",
         },
+        undefined,
       ],
-      "type": "a",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -142,4 +143,4 @@ ShallowWrapper {
 }
 `;
 
-exports[`<NavItem /> should match snapshot 2`] = `"<a class=\\"item\\"><img class=\\"icon\\" src=\\"home.svg\\" alt=\\"Home\\"/><span class=\\"title\\">Home</span></a>"`;
+exports[`<DataCell /> should match snapshot 2`] = `"<div class=\\"cell dataCell\\"><span class=\\"val\\">Val</span><span class=\\"sub\\">Sub</span></div>"`;

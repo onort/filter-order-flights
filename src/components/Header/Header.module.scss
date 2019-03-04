@@ -45,7 +45,7 @@
   @include forNonDesktop {
     position: absolute;
     z-index: 9;
-    top: 90px;
+    top: px-to-rem(95px);
     right: 0;
     display: none;
     width: 100%;

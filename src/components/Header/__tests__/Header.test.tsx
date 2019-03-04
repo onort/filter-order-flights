@@ -18,10 +18,10 @@ describe("<Header />", () => {
     expect(
       wrapper.containsAllMatchingElements([
         <img src={ThyLogo} alt="Logo" />,
-        <NavItem title="Ana Sayfa" icon={Home} active={true} />,
-        <NavItem title="Süper Fırsatlar" icon={Sale} />,
-        <NavItem title="Yardım" icon={Help} />,
-        <NavItem title="İletişim" icon={Contact} />
+        <NavItem title="Ana Sayfa" icon={Home} active={true} uri="#" />,
+        <NavItem title="Süper Fırsatlar" icon={Sale} uri="#" />,
+        <NavItem title="Yardım" icon={Help} uri="#" />,
+        <NavItem title="İletişim" icon={Contact} uri="#" />
       ])
     )
     wrapper.unmount()

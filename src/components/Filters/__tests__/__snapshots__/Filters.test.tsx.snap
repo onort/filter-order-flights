@@ -1,0 +1,698 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filters /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Filters
+    allAirlines={[MockFunction]}
+    allClasses={[MockFunction]}
+    allStops={[MockFunction]}
+    filteringOptions={
+      Object {
+        "airlineCodes": Array [],
+        "airlines": Array [],
+        "durationRange": Object {
+          "max": 0,
+          "min": 0,
+        },
+        "priceRange": Object {
+          "max": 0,
+          "min": 0,
+        },
+        "stops": Object {
+          "direct": 0,
+          "multipleStops": 0,
+          "singleStop": 0,
+        },
+      }
+    }
+    filters={
+      Object {
+        "airlines": Array [],
+        "classes": Array [
+          "economy",
+          "business",
+          "corporate",
+        ],
+        "maxDuration": 0,
+        "maxPrice": 0,
+        "stops": Array [
+          "direct",
+          "singleStop",
+          "multipleStops",
+        ],
+      }
+    }
+    setDuration={[MockFunction]}
+    setPrice={[MockFunction]}
+    toggleAirline={[MockFunction]}
+    toggleClass={[MockFunction]}
+    toggleStop={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Card>
+        <FilterSection
+          canSelectAll={true}
+          onSelectAll={[Function]}
+          title="Aktarma"
+        />
+        <FilterSection
+          canSelectAll={true}
+          onSelectAll={[Function]}
+          title="Sınıf"
+        >
+          <CheckBox
+            checked={true}
+            label="Ekonomi"
+            onChange={[Function]}
+          />
+          <CheckBox
+            checked={true}
+            label="Business"
+            onChange={[Function]}
+          />
+          <CheckBox
+            checked={true}
+            label="Kurumsal"
+            onChange={[Function]}
+          />
+        </FilterSection>
+        <FilterSection
+          canSelectAll={false}
+          infoText="0 TL"
+          title="Max Fiyat"
+        >
+          <Slider
+            currentValue={0}
+            max={0}
+            min={0}
+            onChange={[Function]}
+          />
+        </FilterSection>
+        <FilterSection
+          canSelectAll={false}
+          infoText=""
+          title="Max Uçuş Süresi"
+        >
+          <Slider
+            currentValue={0}
+            max={0}
+            min={0}
+            onChange={[Function]}
+          />
+        </FilterSection>
+        <FilterSection
+          canSelectAll={true}
+          onSelectAll={[Function]}
+          title="Havayolu"
+        />
+      </Card>,
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <FilterSection
+            canSelectAll={true}
+            onSelectAll={[Function]}
+            title="Aktarma"
+          />,
+          <FilterSection
+            canSelectAll={true}
+            onSelectAll={[Function]}
+            title="Sınıf"
+          >
+            <CheckBox
+              checked={true}
+              label="Ekonomi"
+              onChange={[Function]}
+            />
+            <CheckBox
+              checked={true}
+              label="Business"
+              onChange={[Function]}
+            />
+            <CheckBox
+              checked={true}
+              label="Kurumsal"
+              onChange={[Function]}
+            />
+          </FilterSection>,
+          <FilterSection
+            canSelectAll={false}
+            infoText="0 TL"
+            title="Max Fiyat"
+          >
+            <Slider
+              currentValue={0}
+              max={0}
+              min={0}
+              onChange={[Function]}
+            />
+          </FilterSection>,
+          <FilterSection
+            canSelectAll={false}
+            infoText=""
+            title="Max Uçuş Süresi"
+          >
+            <Slider
+              currentValue={0}
+              max={0}
+              min={0}
+              onChange={[Function]}
+            />
+          </FilterSection>,
+          <FilterSection
+            canSelectAll={true}
+            onSelectAll={[Function]}
+            title="Havayolu"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "canSelectAll": true,
+            "children": Array [
+              false,
+              false,
+              false,
+            ],
+            "onSelectAll": [Function],
+            "title": "Aktarma",
+          },
+          "ref": null,
+          "rendered": Array [
+            false,
+            false,
+            false,
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "canSelectAll": true,
+            "children": Array [
+              <CheckBox
+                checked={true}
+                label="Ekonomi"
+                onChange={[Function]}
+              />,
+              <CheckBox
+                checked={true}
+                label="Business"
+                onChange={[Function]}
+              />,
+              <CheckBox
+                checked={true}
+                label="Kurumsal"
+                onChange={[Function]}
+              />,
+            ],
+            "onSelectAll": [Function],
+            "title": "Sınıf",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "checked": true,
+                "label": "Ekonomi",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "checked": true,
+                "label": "Business",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "checked": true,
+                "label": "Kurumsal",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "canSelectAll": false,
+            "children": <Slider
+              currentValue={0}
+              max={0}
+              min={0}
+              onChange={[Function]}
+            />,
+            "infoText": "0 TL",
+            "title": "Max Fiyat",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currentValue": 0,
+              "max": 0,
+              "min": 0,
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "canSelectAll": false,
+            "children": <Slider
+              currentValue={0}
+              max={0}
+              min={0}
+              onChange={[Function]}
+            />,
+            "infoText": "",
+            "title": "Max Uçuş Süresi",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currentValue": 0,
+              "max": 0,
+              "min": 0,
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "canSelectAll": true,
+            "children": Array [],
+            "onSelectAll": [Function],
+            "title": "Havayolu",
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "aside",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Card>
+          <FilterSection
+            canSelectAll={true}
+            onSelectAll={[Function]}
+            title="Aktarma"
+          />
+          <FilterSection
+            canSelectAll={true}
+            onSelectAll={[Function]}
+            title="Sınıf"
+          >
+            <CheckBox
+              checked={true}
+              label="Ekonomi"
+              onChange={[Function]}
+            />
+            <CheckBox
+              checked={true}
+              label="Business"
+              onChange={[Function]}
+            />
+            <CheckBox
+              checked={true}
+              label="Kurumsal"
+              onChange={[Function]}
+            />
+          </FilterSection>
+          <FilterSection
+            canSelectAll={false}
+            infoText="0 TL"
+            title="Max Fiyat"
+          >
+            <Slider
+              currentValue={0}
+              max={0}
+              min={0}
+              onChange={[Function]}
+            />
+          </FilterSection>
+          <FilterSection
+            canSelectAll={false}
+            infoText=""
+            title="Max Uçuş Süresi"
+          >
+            <Slider
+              currentValue={0}
+              max={0}
+              min={0}
+              onChange={[Function]}
+            />
+          </FilterSection>
+          <FilterSection
+            canSelectAll={true}
+            onSelectAll={[Function]}
+            title="Havayolu"
+          />
+        </Card>,
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <FilterSection
+              canSelectAll={true}
+              onSelectAll={[Function]}
+              title="Aktarma"
+            />,
+            <FilterSection
+              canSelectAll={true}
+              onSelectAll={[Function]}
+              title="Sınıf"
+            >
+              <CheckBox
+                checked={true}
+                label="Ekonomi"
+                onChange={[Function]}
+              />
+              <CheckBox
+                checked={true}
+                label="Business"
+                onChange={[Function]}
+              />
+              <CheckBox
+                checked={true}
+                label="Kurumsal"
+                onChange={[Function]}
+              />
+            </FilterSection>,
+            <FilterSection
+              canSelectAll={false}
+              infoText="0 TL"
+              title="Max Fiyat"
+            >
+              <Slider
+                currentValue={0}
+                max={0}
+                min={0}
+                onChange={[Function]}
+              />
+            </FilterSection>,
+            <FilterSection
+              canSelectAll={false}
+              infoText=""
+              title="Max Uçuş Süresi"
+            >
+              <Slider
+                currentValue={0}
+                max={0}
+                min={0}
+                onChange={[Function]}
+              />
+            </FilterSection>,
+            <FilterSection
+              canSelectAll={true}
+              onSelectAll={[Function]}
+              title="Havayolu"
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "canSelectAll": true,
+              "children": Array [
+                false,
+                false,
+                false,
+              ],
+              "onSelectAll": [Function],
+              "title": "Aktarma",
+            },
+            "ref": null,
+            "rendered": Array [
+              false,
+              false,
+              false,
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "canSelectAll": true,
+              "children": Array [
+                <CheckBox
+                  checked={true}
+                  label="Ekonomi"
+                  onChange={[Function]}
+                />,
+                <CheckBox
+                  checked={true}
+                  label="Business"
+                  onChange={[Function]}
+                />,
+                <CheckBox
+                  checked={true}
+                  label="Kurumsal"
+                  onChange={[Function]}
+                />,
+              ],
+              "onSelectAll": [Function],
+              "title": "Sınıf",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "checked": true,
+                  "label": "Ekonomi",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "checked": true,
+                  "label": "Business",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "checked": true,
+                  "label": "Kurumsal",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "canSelectAll": false,
+              "children": <Slider
+                currentValue={0}
+                max={0}
+                min={0}
+                onChange={[Function]}
+              />,
+              "infoText": "0 TL",
+              "title": "Max Fiyat",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "currentValue": 0,
+                "max": 0,
+                "min": 0,
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "canSelectAll": false,
+              "children": <Slider
+                currentValue={0}
+                max={0}
+                min={0}
+                onChange={[Function]}
+              />,
+              "infoText": "",
+              "title": "Max Uçuş Süresi",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "currentValue": 0,
+                "max": 0,
+                "min": 0,
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "canSelectAll": true,
+              "children": Array [],
+              "onSelectAll": [Function],
+              "title": "Havayolu",
+            },
+            "ref": null,
+            "rendered": Array [],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "aside",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`<Filters /> should match snapshot 2`] = `"<aside class=\\"container\\"><div class=\\"container\\"><div class=\\"container\\"><div class=\\"header\\"><span class=\\"title\\">Aktarma</span><span class=\\"selectAll\\">Tümünü Seç</span></div><div class=\\"body\\"></div></div><div class=\\"container\\"><div class=\\"header\\"><span class=\\"title\\">Sınıf</span><span class=\\"selectAll\\">Tümünü Seç</span></div><div class=\\"body\\"><label class=\\"container\\">Ekonomi<input type=\\"checkbox\\" class=\\"checkbox\\" checked=\\"\\"/><span class=\\"checkmark checked\\"></span></label><label class=\\"container\\">Business<input type=\\"checkbox\\" class=\\"checkbox\\" checked=\\"\\"/><span class=\\"checkmark checked\\"></span></label><label class=\\"container\\">Kurumsal<input type=\\"checkbox\\" class=\\"checkbox\\" checked=\\"\\"/><span class=\\"checkmark checked\\"></span></label></div></div><div class=\\"container\\"><div class=\\"header\\"><span class=\\"title\\">Max Fiyat</span><span class=\\"infoText\\">0 TL</span></div><div class=\\"body\\"><div class=\\"container\\"><div class=\\"sliderTrack\\" style=\\"width:NaN%\\"></div><input type=\\"range\\" min=\\"0\\" max=\\"0\\" value=\\"0\\" class=\\"slider\\"/></div></div></div><div class=\\"container\\"><div class=\\"header\\"><span class=\\"title\\">Max Uçuş Süresi</span></div><div class=\\"body\\"><div class=\\"container\\"><div class=\\"sliderTrack\\" style=\\"width:NaN%\\"></div><input type=\\"range\\" min=\\"0\\" max=\\"0\\" value=\\"0\\" class=\\"slider\\"/></div></div></div><div class=\\"container\\"><div class=\\"header\\"><span class=\\"title\\">Havayolu</span><span class=\\"selectAll\\">Tümünü Seç</span></div><div class=\\"body\\"></div></div></div></aside>"`;

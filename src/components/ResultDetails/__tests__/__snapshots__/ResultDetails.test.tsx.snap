@@ -1,0 +1,948 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ResultDetails /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ResultDetails
+    legs={
+      Array [
+        Object {
+          "arrival": Object {
+            "airportCode": "ADB",
+            "airportName": "Izmir",
+            "time": "2017-04-14T09:10:00",
+          },
+          "carrier": "Pegasus Airlines",
+          "departure": Object {
+            "airportCode": "ADA",
+            "airportName": "Adana",
+            "time": "2017-04-14T07:40:00",
+          },
+          "duration": 90,
+          "flightCode": "PC 3011",
+        },
+      ]
+    }
+    pricingOptions={
+      Array [
+        Object {
+          "agent": "Pegasus Airlines",
+          "price": 66.99,
+        },
+        Object {
+          "agent": "AeroBilet",
+          "price": 70.34,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Cell
+          className="legs"
+        >
+          <Row
+            className="legRow"
+          >
+            <DataCell
+              className="origin"
+              detailCell={true}
+              sub="ADA Adana"
+              val="07:40"
+            />
+            <Cell
+              className="durationContainer"
+            >
+              <span
+                className="duration"
+              >
+                1 saat 30 dakika
+              </span>
+              <div
+                className="pointedLine"
+              />
+            </Cell>
+            <DataCell
+              className="destination"
+              detailCell={true}
+              sub="Izmir ADB "
+              val="09:10"
+            />
+            <DataCell
+              className="flightInfo"
+              detailCell={true}
+              sub="PC 3011 Ekonomi"
+              val="Pegasus Airlines"
+            />
+          </Row>
+        </Cell>,
+        <Cell
+          className="prices"
+        >
+          <div
+            className="priceOption"
+          >
+            <span
+              className="price"
+            >
+              66.99
+               TL
+            </span>
+            <span
+              className="agent"
+            >
+              @
+              Pegasus Airlines
+            </span>
+          </div>
+          <div
+            className="priceOption"
+          >
+            <span
+              className="price"
+            >
+              70.34
+               TL
+            </span>
+            <span
+              className="agent"
+            >
+              @
+              AeroBilet
+            </span>
+          </div>
+        </Cell>,
+      ],
+      "className": "row",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Row
+              className="legRow"
+            >
+              <DataCell
+                className="origin"
+                detailCell={true}
+                sub="ADA Adana"
+                val="07:40"
+              />
+              <Cell
+                className="durationContainer"
+              >
+                <span
+                  className="duration"
+                >
+                  1 saat 30 dakika
+                </span>
+                <div
+                  className="pointedLine"
+                />
+              </Cell>
+              <DataCell
+                className="destination"
+                detailCell={true}
+                sub="Izmir ADB "
+                val="09:10"
+              />
+              <DataCell
+                className="flightInfo"
+                detailCell={true}
+                sub="PC 3011 Ekonomi"
+                val="Pegasus Airlines"
+              />
+            </Row>,
+          ],
+          "className": "legs",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "PC 3011",
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <DataCell
+                  className="origin"
+                  detailCell={true}
+                  sub="ADA Adana"
+                  val="07:40"
+                />,
+                <Cell
+                  className="durationContainer"
+                >
+                  <span
+                    className="duration"
+                  >
+                    1 saat 30 dakika
+                  </span>
+                  <div
+                    className="pointedLine"
+                  />
+                </Cell>,
+                <DataCell
+                  className="destination"
+                  detailCell={true}
+                  sub="Izmir ADB "
+                  val="09:10"
+                />,
+                <DataCell
+                  className="flightInfo"
+                  detailCell={true}
+                  sub="PC 3011 Ekonomi"
+                  val="Pegasus Airlines"
+                />,
+              ],
+              "className": "legRow",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "origin",
+                  "detailCell": true,
+                  "sub": "ADA Adana",
+                  "val": "07:40",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <span
+                      className="duration"
+                    >
+                      1 saat 30 dakika
+                    </span>,
+                    <div
+                      className="pointedLine"
+                    />,
+                  ],
+                  "className": "durationContainer",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "1 saat 30 dakika",
+                      "className": "duration",
+                    },
+                    "ref": null,
+                    "rendered": "1 saat 30 dakika",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "pointedLine",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "destination",
+                  "detailCell": true,
+                  "sub": "Izmir ADB ",
+                  "val": "09:10",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "flightInfo",
+                  "detailCell": true,
+                  "sub": "PC 3011 Ekonomi",
+                  "val": "Pegasus Airlines",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <div
+              className="priceOption"
+            >
+              <span
+                className="price"
+              >
+                66.99
+                 TL
+              </span>
+              <span
+                className="agent"
+              >
+                @
+                Pegasus Airlines
+              </span>
+            </div>,
+            <div
+              className="priceOption"
+            >
+              <span
+                className="price"
+              >
+                70.34
+                 TL
+              </span>
+              <span
+                className="agent"
+              >
+                @
+                AeroBilet
+              </span>
+            </div>,
+          ],
+          "className": "prices",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "Pegasus Airlines",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="price"
+                >
+                  66.99
+                   TL
+                </span>,
+                <span
+                  className="agent"
+                >
+                  @
+                  Pegasus Airlines
+                </span>,
+              ],
+              "className": "priceOption",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    66.99,
+                    " TL",
+                  ],
+                  "className": "price",
+                },
+                "ref": null,
+                "rendered": Array [
+                  66.99,
+                  " TL",
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "@",
+                    "Pegasus Airlines",
+                  ],
+                  "className": "agent",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "@",
+                  "Pegasus Airlines",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "AeroBilet",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="price"
+                >
+                  70.34
+                   TL
+                </span>,
+                <span
+                  className="agent"
+                >
+                  @
+                  AeroBilet
+                </span>,
+              ],
+              "className": "priceOption",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    70.34,
+                    " TL",
+                  ],
+                  "className": "price",
+                },
+                "ref": null,
+                "rendered": Array [
+                  70.34,
+                  " TL",
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "@",
+                    "AeroBilet",
+                  ],
+                  "className": "agent",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "@",
+                  "AeroBilet",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Cell
+            className="legs"
+          >
+            <Row
+              className="legRow"
+            >
+              <DataCell
+                className="origin"
+                detailCell={true}
+                sub="ADA Adana"
+                val="07:40"
+              />
+              <Cell
+                className="durationContainer"
+              >
+                <span
+                  className="duration"
+                >
+                  1 saat 30 dakika
+                </span>
+                <div
+                  className="pointedLine"
+                />
+              </Cell>
+              <DataCell
+                className="destination"
+                detailCell={true}
+                sub="Izmir ADB "
+                val="09:10"
+              />
+              <DataCell
+                className="flightInfo"
+                detailCell={true}
+                sub="PC 3011 Ekonomi"
+                val="Pegasus Airlines"
+              />
+            </Row>
+          </Cell>,
+          <Cell
+            className="prices"
+          >
+            <div
+              className="priceOption"
+            >
+              <span
+                className="price"
+              >
+                66.99
+                 TL
+              </span>
+              <span
+                className="agent"
+              >
+                @
+                Pegasus Airlines
+              </span>
+            </div>
+            <div
+              className="priceOption"
+            >
+              <span
+                className="price"
+              >
+                70.34
+                 TL
+              </span>
+              <span
+                className="agent"
+              >
+                @
+                AeroBilet
+              </span>
+            </div>
+          </Cell>,
+        ],
+        "className": "row",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Row
+                className="legRow"
+              >
+                <DataCell
+                  className="origin"
+                  detailCell={true}
+                  sub="ADA Adana"
+                  val="07:40"
+                />
+                <Cell
+                  className="durationContainer"
+                >
+                  <span
+                    className="duration"
+                  >
+                    1 saat 30 dakika
+                  </span>
+                  <div
+                    className="pointedLine"
+                  />
+                </Cell>
+                <DataCell
+                  className="destination"
+                  detailCell={true}
+                  sub="Izmir ADB "
+                  val="09:10"
+                />
+                <DataCell
+                  className="flightInfo"
+                  detailCell={true}
+                  sub="PC 3011 Ekonomi"
+                  val="Pegasus Airlines"
+                />
+              </Row>,
+            ],
+            "className": "legs",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "PC 3011",
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <DataCell
+                    className="origin"
+                    detailCell={true}
+                    sub="ADA Adana"
+                    val="07:40"
+                  />,
+                  <Cell
+                    className="durationContainer"
+                  >
+                    <span
+                      className="duration"
+                    >
+                      1 saat 30 dakika
+                    </span>
+                    <div
+                      className="pointedLine"
+                    />
+                  </Cell>,
+                  <DataCell
+                    className="destination"
+                    detailCell={true}
+                    sub="Izmir ADB "
+                    val="09:10"
+                  />,
+                  <DataCell
+                    className="flightInfo"
+                    detailCell={true}
+                    sub="PC 3011 Ekonomi"
+                    val="Pegasus Airlines"
+                  />,
+                ],
+                "className": "legRow",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "origin",
+                    "detailCell": true,
+                    "sub": "ADA Adana",
+                    "val": "07:40",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="duration"
+                      >
+                        1 saat 30 dakika
+                      </span>,
+                      <div
+                        className="pointedLine"
+                      />,
+                    ],
+                    "className": "durationContainer",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "1 saat 30 dakika",
+                        "className": "duration",
+                      },
+                      "ref": null,
+                      "rendered": "1 saat 30 dakika",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "pointedLine",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "destination",
+                    "detailCell": true,
+                    "sub": "Izmir ADB ",
+                    "val": "09:10",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "flightInfo",
+                    "detailCell": true,
+                    "sub": "PC 3011 Ekonomi",
+                    "val": "Pegasus Airlines",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <div
+                className="priceOption"
+              >
+                <span
+                  className="price"
+                >
+                  66.99
+                   TL
+                </span>
+                <span
+                  className="agent"
+                >
+                  @
+                  Pegasus Airlines
+                </span>
+              </div>,
+              <div
+                className="priceOption"
+              >
+                <span
+                  className="price"
+                >
+                  70.34
+                   TL
+                </span>
+                <span
+                  className="agent"
+                >
+                  @
+                  AeroBilet
+                </span>
+              </div>,
+            ],
+            "className": "prices",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "Pegasus Airlines",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="price"
+                  >
+                    66.99
+                     TL
+                  </span>,
+                  <span
+                    className="agent"
+                  >
+                    @
+                    Pegasus Airlines
+                  </span>,
+                ],
+                "className": "priceOption",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      66.99,
+                      " TL",
+                    ],
+                    "className": "price",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    66.99,
+                    " TL",
+                  ],
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "@",
+                      "Pegasus Airlines",
+                    ],
+                    "className": "agent",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "@",
+                    "Pegasus Airlines",
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "AeroBilet",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="price"
+                  >
+                    70.34
+                     TL
+                  </span>,
+                  <span
+                    className="agent"
+                  >
+                    @
+                    AeroBilet
+                  </span>,
+                ],
+                "className": "priceOption",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      70.34,
+                      " TL",
+                    ],
+                    "className": "price",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    70.34,
+                    " TL",
+                  ],
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "@",
+                      "AeroBilet",
+                    ],
+                    "className": "agent",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "@",
+                    "AeroBilet",
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<ResultDetails /> should match snapshot 2`] = `"<div class=\\"row row\\"><div class=\\"cell legs\\"><div class=\\"row legRow\\"><div class=\\"cell dataCell detailCell origin\\"><span class=\\"val\\">07:40</span><span class=\\"sub\\">ADA Adana</span></div><div class=\\"cell durationContainer\\"><span class=\\"duration\\">1 saat 30 dakika</span><div class=\\"pointedLine\\"></div></div><div class=\\"cell dataCell detailCell destination\\"><span class=\\"val\\">09:10</span><span class=\\"sub\\">Izmir ADB </span></div><div class=\\"cell dataCell detailCell flightInfo\\"><span class=\\"val\\">Pegasus Airlines</span><span class=\\"sub\\">PC 3011 Ekonomi</span></div></div></div><div class=\\"cell prices\\"><div class=\\"priceOption\\"><span class=\\"price\\">66.99 TL</span><span class=\\"agent\\">@Pegasus Airlines</span></div><div class=\\"priceOption\\"><span class=\\"price\\">70.34 TL</span><span class=\\"agent\\">@AeroBilet</span></div></div></div>"`;

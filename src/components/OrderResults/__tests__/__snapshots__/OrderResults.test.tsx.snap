@@ -1,0 +1,415 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrderResults /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <OrderResults
+    flightCount={10}
+    onOrderSelect={[MockFunction]}
+    orderingOptions={
+      Array [
+        Object {
+          "text": "Ucuzdan Pahalıya",
+          "value": "minPrice",
+        },
+        Object {
+          "text": "Pahalıdan Ucuza",
+          "value": "maxPrice",
+        },
+        Object {
+          "text": "Tarihe Göre Yakın",
+          "value": "closest",
+        },
+        Object {
+          "text": "Tarihe Göre Uzak",
+          "value": "farthest",
+        },
+      ]
+    }
+    selectedOrder={
+      Object {
+        "text": "Ucuzdan Pahalıya",
+        "value": "minPrice",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <span
+          className="flightCount"
+        >
+          10
+           Uçuş Listeleniyor
+        </span>,
+        <div
+          className="buttonsContainer"
+        >
+          <Button
+            className="button"
+            primary={true}
+            text="Yeniden Ara"
+            type="button"
+          />
+          <Button
+            className="button"
+            primary={true}
+            text="Filtrele"
+            type="button"
+          />
+        </div>,
+        <Dropdown
+          onSelect={[MockFunction]}
+          orderingOtions={
+            Array [
+              Object {
+                "text": "Ucuzdan Pahalıya",
+                "value": "minPrice",
+              },
+              Object {
+                "text": "Pahalıdan Ucuza",
+                "value": "maxPrice",
+              },
+              Object {
+                "text": "Tarihe Göre Yakın",
+                "value": "closest",
+              },
+              Object {
+                "text": "Tarihe Göre Uzak",
+                "value": "farthest",
+              },
+            ]
+          }
+          selectedOrder={
+            Object {
+              "text": "Ucuzdan Pahalıya",
+              "value": "minPrice",
+            }
+          }
+          title="Sıralama"
+        />,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            10,
+            " Uçuş Listeleniyor",
+          ],
+          "className": "flightCount",
+        },
+        "ref": null,
+        "rendered": Array [
+          10,
+          " Uçuş Listeleniyor",
+        ],
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Button
+              className="button"
+              primary={true}
+              text="Yeniden Ara"
+              type="button"
+            />,
+            <Button
+              className="button"
+              primary={true}
+              text="Filtrele"
+              type="button"
+            />,
+          ],
+          "className": "buttonsContainer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "className": "button",
+              "primary": true,
+              "text": "Yeniden Ara",
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "className": "button",
+              "primary": true,
+              "text": "Filtrele",
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "onSelect": [MockFunction],
+          "orderingOtions": Array [
+            Object {
+              "text": "Ucuzdan Pahalıya",
+              "value": "minPrice",
+            },
+            Object {
+              "text": "Pahalıdan Ucuza",
+              "value": "maxPrice",
+            },
+            Object {
+              "text": "Tarihe Göre Yakın",
+              "value": "closest",
+            },
+            Object {
+              "text": "Tarihe Göre Uzak",
+              "value": "farthest",
+            },
+          ],
+          "selectedOrder": Object {
+            "text": "Ucuzdan Pahalıya",
+            "value": "minPrice",
+          },
+          "title": "Sıralama",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <span
+            className="flightCount"
+          >
+            10
+             Uçuş Listeleniyor
+          </span>,
+          <div
+            className="buttonsContainer"
+          >
+            <Button
+              className="button"
+              primary={true}
+              text="Yeniden Ara"
+              type="button"
+            />
+            <Button
+              className="button"
+              primary={true}
+              text="Filtrele"
+              type="button"
+            />
+          </div>,
+          <Dropdown
+            onSelect={[MockFunction]}
+            orderingOtions={
+              Array [
+                Object {
+                  "text": "Ucuzdan Pahalıya",
+                  "value": "minPrice",
+                },
+                Object {
+                  "text": "Pahalıdan Ucuza",
+                  "value": "maxPrice",
+                },
+                Object {
+                  "text": "Tarihe Göre Yakın",
+                  "value": "closest",
+                },
+                Object {
+                  "text": "Tarihe Göre Uzak",
+                  "value": "farthest",
+                },
+              ]
+            }
+            selectedOrder={
+              Object {
+                "text": "Ucuzdan Pahalıya",
+                "value": "minPrice",
+              }
+            }
+            title="Sıralama"
+          />,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              10,
+              " Uçuş Listeleniyor",
+            ],
+            "className": "flightCount",
+          },
+          "ref": null,
+          "rendered": Array [
+            10,
+            " Uçuş Listeleniyor",
+          ],
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Button
+                className="button"
+                primary={true}
+                text="Yeniden Ara"
+                type="button"
+              />,
+              <Button
+                className="button"
+                primary={true}
+                text="Filtrele"
+                type="button"
+              />,
+            ],
+            "className": "buttonsContainer",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "button",
+                "primary": true,
+                "text": "Yeniden Ara",
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "button",
+                "primary": true,
+                "text": "Filtrele",
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "onSelect": [MockFunction],
+            "orderingOtions": Array [
+              Object {
+                "text": "Ucuzdan Pahalıya",
+                "value": "minPrice",
+              },
+              Object {
+                "text": "Pahalıdan Ucuza",
+                "value": "maxPrice",
+              },
+              Object {
+                "text": "Tarihe Göre Yakın",
+                "value": "closest",
+              },
+              Object {
+                "text": "Tarihe Göre Uzak",
+                "value": "farthest",
+              },
+            ],
+            "selectedOrder": Object {
+              "text": "Ucuzdan Pahalıya",
+              "value": "minPrice",
+            },
+            "title": "Sıralama",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<OrderResults /> should match snapshot 2`] = `"<div class=\\"container container\\"><span class=\\"flightCount\\">10 Uçuş Listeleniyor</span><div class=\\"buttonsContainer\\"><button class=\\"button primary button\\" type=\\"button\\"><span class=\\"text\\">Yeniden Ara</span></button><button class=\\"button primary button\\" type=\\"button\\"><span class=\\"text\\">Filtrele</span></button></div><div class=\\"container\\"><span class=\\"title\\">Sıralama</span><div class=\\"dropdown\\"><div class=\\"selected\\"><div class=\\"selectedItem\\">Ucuzdan Pahalıya</div><div class=\\"arrow\\"></div></div></div></div></div>"`;

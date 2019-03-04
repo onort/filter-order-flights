@@ -24,6 +24,7 @@ ShallowWrapper {
         className="searchBar"
       >
         <SearchForm
+          className="form"
           type="primary"
         />
       </Container>,
@@ -38,6 +39,7 @@ ShallowWrapper {
         "children": Array [
           false,
           <SearchForm
+            className="form"
             type="primary"
           />,
         ],
@@ -51,6 +53,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "className": "form",
             "type": "primary",
           },
           "ref": null,
@@ -72,6 +75,7 @@ ShallowWrapper {
           className="searchBar"
         >
           <SearchForm
+            className="form"
             type="primary"
           />
         </Container>,
@@ -86,6 +90,7 @@ ShallowWrapper {
           "children": Array [
             false,
             <SearchForm
+              className="form"
               type="primary"
             />,
           ],
@@ -99,6 +104,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "className": "form",
               "type": "primary",
             },
             "ref": null,
@@ -135,4 +141,4 @@ ShallowWrapper {
 }
 `;
 
-exports[`<SearchBar /> should match snapshot 2`] = `"<section class=\\"container primary\\"><div class=\\"container searchBar\\"><div class=\\"container\\"><div class=\\"container\\"><img class=\\"icon\\" src=\\"departure.svg\\"/><input class=\\"input\\"/></div><div class=\\"container\\"><img class=\\"icon\\" src=\\"arrival.svg\\"/><input class=\\"input\\"/></div><div class=\\"container\\"><img class=\\"icon\\" src=\\"deparutre-date.svg\\"/><input class=\\"input\\"/></div><div class=\\"container\\"><img class=\\"icon\\" src=\\"arrival-date.svg\\"/><input class=\\"input\\"/></div><div class=\\"container small\\"><img class=\\"icon\\" src=\\"person.svg\\"/><input class=\\"input\\"/></div><button class=\\"button primary searchButton\\" type=\\"button\\"><span class=\\"text\\">Yeniden Ara</span></button></div></div></section>"`;
+exports[`<SearchBar /> should match snapshot 2`] = `"<section class=\\"container primary\\"><div class=\\"container searchBar\\"><div class=\\"container form\\"><div class=\\"container\\"><img class=\\"icon\\" src=\\"departure.svg\\"/><input class=\\"input\\"/></div><div class=\\"container\\"><img class=\\"icon\\" src=\\"arrival.svg\\"/><input class=\\"input\\"/></div><div class=\\"container\\"><img class=\\"icon\\" src=\\"deparutre-date.svg\\"/><input class=\\"input\\"/></div><div class=\\"container\\"><img class=\\"icon\\" src=\\"arrival-date.svg\\"/><input class=\\"input\\"/></div><div class=\\"container small\\"><img class=\\"icon\\" src=\\"person.svg\\"/><input class=\\"input\\"/></div><button class=\\"button primary searchButton\\" type=\\"button\\"><span class=\\"text\\">Yeniden Ara</span></button></div></div></section>"`;

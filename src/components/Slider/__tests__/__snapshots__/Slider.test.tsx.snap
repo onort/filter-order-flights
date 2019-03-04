@@ -23,42 +23,16 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <input
-        className="slider"
-        max={10}
-        min={0}
-        onChange={[MockFunction]}
-        type="range"
-        value={0}
-      />,
-      "className": "container",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "slider",
-        "max": 10,
-        "min": 0,
-        "onChange": [MockFunction],
-        "type": "range",
-        "value": 0,
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "input",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <input
+      "children": Array [
+        <div
+          className="sliderTrack"
+          style={
+            Object {
+              "width": "-2%",
+            }
+          }
+        />,
+        <input
           className="slider"
           max={10}
           min={0}
@@ -66,10 +40,26 @@ ShallowWrapper {
           type="range"
           value={0}
         />,
-        "className": "container",
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "sliderTrack",
+          "style": Object {
+            "width": "-2%",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
       },
-      "ref": null,
-      "rendered": Object {
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -85,6 +75,68 @@ ShallowWrapper {
         "rendered": null,
         "type": "input",
       },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="sliderTrack"
+            style={
+              Object {
+                "width": "-2%",
+              }
+            }
+          />,
+          <input
+            className="slider"
+            max={10}
+            min={0}
+            onChange={[MockFunction]}
+            type="range"
+            value={0}
+          />,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "sliderTrack",
+            "style": Object {
+              "width": "-2%",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "slider",
+            "max": 10,
+            "min": 0,
+            "onChange": [MockFunction],
+            "type": "range",
+            "value": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+      ],
       "type": "div",
     },
   ],
@@ -112,4 +164,4 @@ ShallowWrapper {
 }
 `;
 
-exports[`<Slider /> should match snapshot 2`] = `"<div class=\\"container\\"><input type=\\"range\\" min=\\"0\\" max=\\"10\\" value=\\"0\\" class=\\"slider\\"/></div>"`;
+exports[`<Slider /> should match snapshot 2`] = `"<div class=\\"container\\"><div class=\\"sliderTrack\\" style=\\"width:-2%\\"></div><input type=\\"range\\" min=\\"0\\" max=\\"10\\" value=\\"0\\" class=\\"slider\\"/></div>"`;

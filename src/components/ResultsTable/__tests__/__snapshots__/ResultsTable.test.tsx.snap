@@ -1,0 +1,582 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ResultsTable /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ResultsTable
+    data={
+      Array [
+        Object {
+          "carriers": Array [
+            Object {
+              "code": "PC",
+              "displayCode": "PC",
+              "id": 1161,
+              "imgUrl": "http://s1.apideeplink.com/images/airlines/H9.png",
+              "name": "Pegasus Airlines",
+            },
+          ],
+          "destination": Object {
+            "airportCode": "ADB",
+            "time": "2017-04-14T09:10:00",
+          },
+          "duration": 90,
+          "id": "9249-1704140740--31973-0-9250-1704140910",
+          "legs": Array [
+            Object {
+              "arrival": Object {
+                "airportCode": "ADB",
+                "airportName": "Izmir",
+                "time": "2017-04-14T09:10:00",
+              },
+              "carrier": "Pegasus Airlines",
+              "departure": Object {
+                "airportCode": "ADA",
+                "airportName": "Adana",
+                "time": "2017-04-14T07:40:00",
+              },
+              "duration": 90,
+              "flightCode": "PC 3011",
+            },
+          ],
+          "lowestPrice": 66.99,
+          "origin": Object {
+            "airportCode": "ADA",
+            "time": "2017-04-14T07:40:00",
+          },
+          "pricingOptions": Array [
+            Object {
+              "agent": "Pegasus Airlines",
+              "price": 66.99,
+            },
+          ],
+          "stops": 0,
+          "stopsType": "direct",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Row
+          className="header"
+        >
+          <Cell>
+            Havayolu
+          </Cell>
+          <Cell>
+            Kalkış
+          </Cell>
+          <Cell>
+            Varış
+          </Cell>
+          <Cell>
+            Aktarma / Süre
+          </Cell>
+          <Cell>
+            Fiyat
+          </Cell>
+          <Cell>
+            Satın Al
+          </Cell>
+        </Row>,
+        Array [
+          <Result
+            itinerary={
+              Object {
+                "carriers": Array [
+                  Object {
+                    "code": "PC",
+                    "displayCode": "PC",
+                    "id": 1161,
+                    "imgUrl": "http://s1.apideeplink.com/images/airlines/H9.png",
+                    "name": "Pegasus Airlines",
+                  },
+                ],
+                "destination": Object {
+                  "airportCode": "ADB",
+                  "time": "2017-04-14T09:10:00",
+                },
+                "duration": 90,
+                "id": "9249-1704140740--31973-0-9250-1704140910",
+                "legs": Array [
+                  Object {
+                    "arrival": Object {
+                      "airportCode": "ADB",
+                      "airportName": "Izmir",
+                      "time": "2017-04-14T09:10:00",
+                    },
+                    "carrier": "Pegasus Airlines",
+                    "departure": Object {
+                      "airportCode": "ADA",
+                      "airportName": "Adana",
+                      "time": "2017-04-14T07:40:00",
+                    },
+                    "duration": 90,
+                    "flightCode": "PC 3011",
+                  },
+                ],
+                "lowestPrice": 66.99,
+                "origin": Object {
+                  "airportCode": "ADA",
+                  "time": "2017-04-14T07:40:00",
+                },
+                "pricingOptions": Array [
+                  Object {
+                    "agent": "Pegasus Airlines",
+                    "price": 66.99,
+                  },
+                ],
+                "stops": 0,
+                "stopsType": "direct",
+              }
+            }
+          />,
+        ],
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Cell>
+              Havayolu
+            </Cell>,
+            <Cell>
+              Kalkış
+            </Cell>,
+            <Cell>
+              Varış
+            </Cell>,
+            <Cell>
+              Aktarma / Süre
+            </Cell>,
+            <Cell>
+              Fiyat
+            </Cell>,
+            <Cell>
+              Satın Al
+            </Cell>,
+          ],
+          "className": "header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Havayolu",
+            },
+            "ref": null,
+            "rendered": "Havayolu",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Kalkış",
+            },
+            "ref": null,
+            "rendered": "Kalkış",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Varış",
+            },
+            "ref": null,
+            "rendered": "Varış",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Aktarma / Süre",
+            },
+            "ref": null,
+            "rendered": "Aktarma / Süre",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Fiyat",
+            },
+            "ref": null,
+            "rendered": "Fiyat",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Satın Al",
+            },
+            "ref": null,
+            "rendered": "Satın Al",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "9249-1704140740--31973-0-9250-1704140910",
+        "nodeType": "class",
+        "props": Object {
+          "itinerary": Object {
+            "carriers": Array [
+              Object {
+                "code": "PC",
+                "displayCode": "PC",
+                "id": 1161,
+                "imgUrl": "http://s1.apideeplink.com/images/airlines/H9.png",
+                "name": "Pegasus Airlines",
+              },
+            ],
+            "destination": Object {
+              "airportCode": "ADB",
+              "time": "2017-04-14T09:10:00",
+            },
+            "duration": 90,
+            "id": "9249-1704140740--31973-0-9250-1704140910",
+            "legs": Array [
+              Object {
+                "arrival": Object {
+                  "airportCode": "ADB",
+                  "airportName": "Izmir",
+                  "time": "2017-04-14T09:10:00",
+                },
+                "carrier": "Pegasus Airlines",
+                "departure": Object {
+                  "airportCode": "ADA",
+                  "airportName": "Adana",
+                  "time": "2017-04-14T07:40:00",
+                },
+                "duration": 90,
+                "flightCode": "PC 3011",
+              },
+            ],
+            "lowestPrice": 66.99,
+            "origin": Object {
+              "airportCode": "ADA",
+              "time": "2017-04-14T07:40:00",
+            },
+            "pricingOptions": Array [
+              Object {
+                "agent": "Pegasus Airlines",
+                "price": 66.99,
+              },
+            ],
+            "stops": 0,
+            "stopsType": "direct",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Row
+            className="header"
+          >
+            <Cell>
+              Havayolu
+            </Cell>
+            <Cell>
+              Kalkış
+            </Cell>
+            <Cell>
+              Varış
+            </Cell>
+            <Cell>
+              Aktarma / Süre
+            </Cell>
+            <Cell>
+              Fiyat
+            </Cell>
+            <Cell>
+              Satın Al
+            </Cell>
+          </Row>,
+          Array [
+            <Result
+              itinerary={
+                Object {
+                  "carriers": Array [
+                    Object {
+                      "code": "PC",
+                      "displayCode": "PC",
+                      "id": 1161,
+                      "imgUrl": "http://s1.apideeplink.com/images/airlines/H9.png",
+                      "name": "Pegasus Airlines",
+                    },
+                  ],
+                  "destination": Object {
+                    "airportCode": "ADB",
+                    "time": "2017-04-14T09:10:00",
+                  },
+                  "duration": 90,
+                  "id": "9249-1704140740--31973-0-9250-1704140910",
+                  "legs": Array [
+                    Object {
+                      "arrival": Object {
+                        "airportCode": "ADB",
+                        "airportName": "Izmir",
+                        "time": "2017-04-14T09:10:00",
+                      },
+                      "carrier": "Pegasus Airlines",
+                      "departure": Object {
+                        "airportCode": "ADA",
+                        "airportName": "Adana",
+                        "time": "2017-04-14T07:40:00",
+                      },
+                      "duration": 90,
+                      "flightCode": "PC 3011",
+                    },
+                  ],
+                  "lowestPrice": 66.99,
+                  "origin": Object {
+                    "airportCode": "ADA",
+                    "time": "2017-04-14T07:40:00",
+                  },
+                  "pricingOptions": Array [
+                    Object {
+                      "agent": "Pegasus Airlines",
+                      "price": 66.99,
+                    },
+                  ],
+                  "stops": 0,
+                  "stopsType": "direct",
+                }
+              }
+            />,
+          ],
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Cell>
+                Havayolu
+              </Cell>,
+              <Cell>
+                Kalkış
+              </Cell>,
+              <Cell>
+                Varış
+              </Cell>,
+              <Cell>
+                Aktarma / Süre
+              </Cell>,
+              <Cell>
+                Fiyat
+              </Cell>,
+              <Cell>
+                Satın Al
+              </Cell>,
+            ],
+            "className": "header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Havayolu",
+              },
+              "ref": null,
+              "rendered": "Havayolu",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Kalkış",
+              },
+              "ref": null,
+              "rendered": "Kalkış",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Varış",
+              },
+              "ref": null,
+              "rendered": "Varış",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Aktarma / Süre",
+              },
+              "ref": null,
+              "rendered": "Aktarma / Süre",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Fiyat",
+              },
+              "ref": null,
+              "rendered": "Fiyat",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Satın Al",
+              },
+              "ref": null,
+              "rendered": "Satın Al",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "9249-1704140740--31973-0-9250-1704140910",
+          "nodeType": "class",
+          "props": Object {
+            "itinerary": Object {
+              "carriers": Array [
+                Object {
+                  "code": "PC",
+                  "displayCode": "PC",
+                  "id": 1161,
+                  "imgUrl": "http://s1.apideeplink.com/images/airlines/H9.png",
+                  "name": "Pegasus Airlines",
+                },
+              ],
+              "destination": Object {
+                "airportCode": "ADB",
+                "time": "2017-04-14T09:10:00",
+              },
+              "duration": 90,
+              "id": "9249-1704140740--31973-0-9250-1704140910",
+              "legs": Array [
+                Object {
+                  "arrival": Object {
+                    "airportCode": "ADB",
+                    "airportName": "Izmir",
+                    "time": "2017-04-14T09:10:00",
+                  },
+                  "carrier": "Pegasus Airlines",
+                  "departure": Object {
+                    "airportCode": "ADA",
+                    "airportName": "Adana",
+                    "time": "2017-04-14T07:40:00",
+                  },
+                  "duration": 90,
+                  "flightCode": "PC 3011",
+                },
+              ],
+              "lowestPrice": 66.99,
+              "origin": Object {
+                "airportCode": "ADA",
+                "time": "2017-04-14T07:40:00",
+              },
+              "pricingOptions": Array [
+                Object {
+                  "agent": "Pegasus Airlines",
+                  "price": 66.99,
+                },
+              ],
+              "stops": 0,
+              "stopsType": "direct",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<ResultsTable /> should match snapshot 2`] = `"<div class=\\"container\\"><div class=\\"row header\\"><div class=\\"cell\\">Havayolu</div><div class=\\"cell\\">Kalkış</div><div class=\\"cell\\">Varış</div><div class=\\"cell\\">Aktarma / Süre</div><div class=\\"cell\\">Fiyat</div><div class=\\"cell\\">Satın Al</div></div><div class=\\"row row\\"><div class=\\"cell carrierCell\\"><img class=\\"logo\\" src=\\"http://s1.apideeplink.com/images/airlines/H9.png\\" alt=\\"Pegasus Airlines Logo\\"/></div><div class=\\"cell dataCell origin\\"><span class=\\"val\\">07:40</span><span class=\\"sub\\">ADA</span><img class=\\"plane\\" src=\\"plane.svg\\" alt=\\"Plane Icon\\"/></div><div class=\\"cell dataCell\\"><span class=\\"val\\">09:10</span><span class=\\"sub\\">ADB</span></div><div class=\\"cell dataCell stopsCell\\"><span class=\\"val\\">Direkt</span><span class=\\"sub\\">1 saat 30 dakika</span></div><div class=\\"cell priceCell\\"><div class=\\"price\\"><div class=\\"dataCell\\"><span class=\\"val\\">66.99 TL</span><span class=\\"sub\\">Pegasus Airlines</span></div><div class=\\"buttonContainer\\"><button class=\\"button viewButton\\" type=\\"button\\"><span class=\\"text\\">İncele</span></button></div></div></div></div></div>"`;

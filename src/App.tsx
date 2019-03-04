@@ -25,7 +25,7 @@ import {
 import data from "./data/mockData.json"
 import { formatData, orderByDate, orderByPrice } from "./utils"
 
-const orderingOptions = [
+export const orderingOptions = [
   { text: "Ucuzdan Pahalıya", value: "minPrice" },
   { text: "Pahalıdan Ucuza", value: "maxPrice" },
   { text: "Tarihe Göre Yakın", value: "closest" },
@@ -136,6 +136,7 @@ class App extends Component<Props, State> {
 
   public render() {
     // console.log(data.result.Itineraries.find(d => d.Filter.Carriers.length > 1))
+    // console.log(data.result.Itineraries[0])
     // console.log(
     //   data.result.Itineraries.find(i => i.OutboundLegId.Segments.length === 2)
     // )
